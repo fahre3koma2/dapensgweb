@@ -31,9 +31,8 @@
         <div class="card">
             <div class="card-body">
 
-                <h4 class="mt-0 header-title">With indicators</h4>
-                <p class="text-muted mb-4 font-14">You can also add the indicators to the
-                    carousel, alongside the controls, too.</p>
+                <h4 class="mt-0 header-title">DASHBOARD LOGIN DAPENSG</h4>
+                <p class="text-muted mb-4 font-14">Bisa Disi Gambar</p>
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
