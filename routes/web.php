@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\webprofil\HomeController as ProfilHomeController;
 use App\Http\Controllers\UserController;
 
 /*
@@ -15,8 +16,14 @@ use App\Http\Controllers\UserController;
 */
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('webprofil.index');
 });
+
+Route::get('/about', [ProfilHomeController::class, 'about'])->name('about');
+Route::get('/manajemen', [ProfilHomeController::class, 'manajemen'])->name('manajemen');
+Route::get('/penghargaan', [ProfilHomeController::class, 'penghargaan'])->name('penghargaan');
+Route::get('/struktur', [ProfilHomeController::class, 'struktur'])->name('struktur');
+Route::get('/kontak', [ProfilHomeController::class, 'kontak'])->name('kontak');
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/dashboard', function () {
