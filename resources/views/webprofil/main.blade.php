@@ -61,6 +61,7 @@
 <script src="{{ url('webprofil/js/jquery.paroller.min.js') }}"></script>
 <script src="{{ url('webprofil/js/owl.js') }}"></script>
 <script src="{{ url('webprofil/js/wow.js') }}"></script>
+<script src="{{ url('webprofil/js/validate.js') }}"></script>
 <script src="{{ url('webprofil/js/nav-tool.js') }}"></script>
 <script src="{{ url('webprofil/js/jquery-ui.js') }}"></script>
 <script src="{{ url('webprofil/js/script.js') }}"></script>

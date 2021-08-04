@@ -24,8 +24,7 @@
 				<div class="map-boxed">
 					<!-- Map Outer -->
 					<div class="map-outer">
-						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d805184.6331292129!2d144.49266890254142!3d-37.97123689954809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad646b5d2ba4df7%3A0x4045675218ccd90!2sMelbourne%20VIC%2C%20Australia!5e0!3m2!1sen!2s!4v1574408946759!5m2!1sen!2s" allowfullscreen="" width="600" height="450" frameborder="0" style="border:0"></iframe> -->
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.614091070929!2d112.651975!3d-7.17053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd80047633bdffd%3A0x25bd39dccd3b5da7!2sJl.+Raden+Ajeng+Kartini+No.23%2C+Kec.+Gresik%2C+Kab.+Gresik%2C+Jawa+Timur+61122!5e0!3m2!1sen!2sid!4v1432344696188" allowfullscreen=""></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15834.444681825644!2d112.65184!3d-7.170866!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x30a97ab99d354c89!2sDana%20Pensiun%20Semen%20Gresik!5e0!3m2!1sen!2sid!4v1628058221974!5m2!1sen!2sid" allowfullscreen="" width="600" height="450" frameborder="0" style="border:0"></iframe>
 					</div>
 				</div>
 			</div>
