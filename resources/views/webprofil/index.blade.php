@@ -54,7 +54,7 @@
         	<div class="auto-container clearfix">
 
 				<div class="pull-left logo-box">
-					<div class="logo"><a href="index.html"><img src="images/logo3.png" alt="" title=""></a></div>
+					<div class="logo"><a href="{{url('/')}}"><img src="{{ url('webprofil/images/logo-3.png')}}" alt="" title=""></a></div>
 				</div>
 
 				<div class="nav-outer clearfix">
@@ -300,7 +300,7 @@
                 </div>
                 <div id="image_block_1">
                     <div class="image-box">
-                        <div class="video-inner" style="background-image: url({{ url('images/resource/video-img.jpg') }});">
+                        <div class="video-inner" style="background-image: url({{ url('webprofil/images/resource/video-img.jpg') }});">
                             <a href="https://www.youtube.com/watch?v=h-_iDmvJ55Q&ab_channel=SemenGresik" class="lightbox-image video-btn" data-caption="">
                                 <i class="flaticon-play-arrow"></i>
                             </a>

@@ -70,7 +70,7 @@
 
 						<!-- Btn Box -->
 						<div class="btn-box">
-							<a href="contact.html" class="theme-btn btn-style-two"><span class="txt">Contact US</span></a>
+							<a href="{{url('/login')}}" class="theme-btn btn-style-two"><span class="txt">Log In</span></a>
 						</div>
 
 						<!-- Mobile Navigation Toggler -->
