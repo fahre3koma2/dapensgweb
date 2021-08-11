@@ -14,7 +14,7 @@
                     <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
             </div>
-            <h4 class="page-title">Dashboard</h4>
+            <h4 class="page-title">Home</h4>
         </div>
     </div>
 </div>
@@ -27,11 +27,11 @@
 
 <div class="row">
 
-    <div class="col-lg-12">
+    <div class="col-lg-6">
         <div class="card">
             <div class="card-body">
 
-                <h4 class="mt-0 header-title">DASHBOARD LOGIN DAPENSG</h4>
+                <h4 class="mt-0 header-title">HOME LOGIN DAPENSG</h4>
                 <p class="text-muted mb-4 font-14">Bisa Disi Gambar</p>
 
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -42,13 +42,13 @@
                     </ol>
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <img class="d-block img-fluid" src="assets/images/small/img-3.jpg" alt="First slide">
+                            <img class="d-block img-fluid" src="{{ url('assets/images/small/img-3.jpg')}}" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="assets/images/small/img-2.jpg" alt="Second slide">
+                            <img class="d-block img-fluid" src="{{ url('assets/images/small/img-2.jpg')}}" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block img-fluid" src="assets/images/small/img-1.jpg" alt="Third slide">
+                            <img class="d-block img-fluid" src="{{ url('assets/images/small/img-1.jpg')}}" alt="Third slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -60,6 +60,18 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+            </div>
+        </div>
+    </div> <!-- end col -->
+
+    <div class="col-lg-6">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mt-0 header-title">Informasi</h4>
+                <p class="text-muted mb-4 font-14">Bisa Disi informasi</p>
+
+
             </div>
         </div>
     </div> <!-- end col -->

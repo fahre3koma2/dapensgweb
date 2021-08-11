@@ -37,13 +37,10 @@
 
                     <!-- Logo container-->
                     <div class="logo">
-                        <a href="index.html" class="logo">
-                        Logo
-                        </a>
                         <!-- Image Logo -->
-                        {{--  <a href="index.html" class="logo">
-                            <img src="assets/images/logo.png" alt="" class="logo-large">
-                        </a>  --}}
+                        <a href="{{url('/dashboard')}}" class="logo">
+                            <img src="{{ url('assets/images/logo.png')}}" alt="" class="logo-large">
+                        </a>
                     </div>
                     <!-- End Logo container-->
 

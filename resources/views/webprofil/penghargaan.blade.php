@@ -165,7 +165,7 @@
     <!-- case-style-three end -->
 
     <!-- Facts Section three -->
-    <section class="facts-section-three" style="background-image: url(images/background/1.jpg);">
+    <section class="facts-section-three" style="background-image: url({{ url('webprofil/images/background/1.jpg')}});">
 
         <div class="auto-container">
             <div class="fact-counter-style-three">
