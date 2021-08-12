@@ -27,7 +27,7 @@
 								<li><a href="{{url('/about')}}">Tentang Kami</a></li>
                                 <li><a href="{{url('/manajemen')}}">Manajemen</a></li>
 								<li><a href="{{url('/penghargaan')}}">Penghargaan</a></li>
-								<li><a href="{{url('/struktur')}}">Struktur Organisasi</a></li>
+								{{--  <li><a href="{{url('/struktur')}}">Struktur Organisasi</a></li>  --}}
 								<li><a href="{{url('/kontak')}}">Hubungi Kami</a></li>
 							</ul>
 						</div>

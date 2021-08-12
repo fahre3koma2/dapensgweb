@@ -97,88 +97,71 @@
 	<!-- End Services Section Two -->
 
 	<!-- Fluid Section Two -->
-    <section class="fluid-section-two">
-		<div class="side-icon"><img src="{{ url('webprofil/images/icons/fluid-icon-1.png')}}" alt="" /></div>
-    	<div class="outer-container clearfix">
+    <section class="team-section">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title centered">
+				<h2>Our Professional Team</h2>
+			</div>
+			<div class="row clearfix">
 
-			<!-- Content Column -->
-            <div class="content-column">
-            	<div class="inner-column">
-					<!-- Sec Title -->
-					<div class="sec-title light">
-						<h2>Why Choose Us</h2>
-						<div class="text">Tonam rem aperiam, eaque ipsa quae ab illo inventoe veritatis et quasi architecto beatae vitae dicta sunt explicabo exercitationem ullam corporis.</div>
-					</div>
-					<!-- Counter Boxed -->
-					<div class="counter-boxed">
-						<div class="fact-counter style-two">
-							<div class="row clearfix">
-
-								<!-- Column -->
-								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-									<div class="inner wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-										<div class="content">
-											<div class="icon flaticon-briefcase"></div>
-											<div class="count-outer count-box">
-												<span class="count-text" data-speed="2500" data-stop="250">0</span><sup>+</sup>
-											</div>
-											<h6 class="counter-title">Business Partners</h6>
-										</div>
-									</div>
-								</div>
-
-								<!-- Column -->
-								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-									<div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-										<div class="content">
-											<div class="icon flaticon-balance"></div>
-											<div class="count-outer count-box">
-												<span class="count-text" data-speed="3000" data-stop="180">0</span><sup>+</sup>
-											</div>
-											<h6 class="counter-title">Cases Done</h6>
-										</div>
-									</div>
-								</div>
-
-								<!-- Column -->
-								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-									<div class="inner wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-										<div class="content">
-											<div class="icon flaticon-marketing"></div>
-											<div class="count-outer count-box">
-												<span class="count-text" data-speed="3000" data-stop="350">0</span><sup>+</sup>
-											</div>
-											<h6 class="counter-title">Happy Clients</h6>
-										</div>
-									</div>
-								</div>
-
-								<!-- Column -->
-								<div class="column counter-column col-lg-6 col-md-6 col-sm-12">
-									<div class="inner wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
-										<div class="content">
-											<div class="icon flaticon-trophy-2"></div>
-											<div class="count-outer count-box">
-												<span class="count-text" data-speed="3000" data-stop="150">0</span><sup>+</sup>
-											</div>
-											<h6 class="counter-title">Awards Win</h6>
-										</div>
-									</div>
-								</div>
-
-							</div>
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{{ url('webprofil/images/resource/team-1.jpg')}}" alt="" />
+						</div>
+						<div class="lower-box">
+							<h5><a href="our_team.html">Chris JAriko</a></h5>
+							<div class="designation">Founder and Ceo</div>
+							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
 						</div>
 					</div>
-
 				</div>
+
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{{ url('webprofil/images/resource/team-2.jpg')}}" alt="" />
+						</div>
+						<div class="lower-box">
+							<h5><a href="our_team.html">ALina Kevin</a></h5>
+							<div class="designation">Senior Attorney</div>
+							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{{ url('webprofil/images/resource/team-3.jpg')}}" alt="" />
+						</div>
+						<div class="lower-box">
+							<h5><a href="our_team.html">Senior Attorney</a></h5>
+							<div class="designation">Junior Attorney</div>
+							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Team Block -->
+				<div class="team-block col-lg-3 col-md-6 col-sm-12">
+					<div class="inner-box wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="{{ url('webprofil/images/resource/team-4.jpg')}}" alt="" />
+						</div>
+						<div class="lower-box">
+							<h5><a href="our_team.html">Polard Andrew</a></h5>
+							<div class="designation">Financial Attorney</div>
+							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
+						</div>
+					</div>
+				</div>
+
 			</div>
-
-			<!-- Image Column -->
-            <div class="image-column" style="background-image:url({{ url('webprofil/images/resource/image-2.jpg')}})">
-				<a href="https://www.youtube.com/watch?v=kxPCFljwJws" class="lightbox-image video-box"><span class="fa fa-play"><i class="ripple"></i></span></a>
-            	<figure class="image-box"><img src="{{ url('webprofil/images/resource/image-2.jpg')}}" alt=""></figure>
-            </div>
-
 		</div>
 	</section>
 	<!-- End Fluid Section Two -->

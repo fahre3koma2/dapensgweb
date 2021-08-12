@@ -36,7 +36,7 @@
                 <div class="top-left pull-left clearfix">
                     <ul class="info-box clearfix">
                         <li><i class="flaticon-headphones"></i><a href="tel:0313984492">(031) 3984492</a></li>
-                        <li><i class="flaticon-email"></i><a href="mailto:info@dapensg.com">info@dapensg.com</a></li>
+                        <li><i class="flaticon-email"></i><a href="mailto:dpsg@indo.net.id">dpsg@indo.net.id</a></li>
                     </ul>
                 </div>
                 {{--  <div class="top-right pull-right clearfix">
@@ -77,12 +77,12 @@
                                 <li><a href="{{url('/about')}}">Tentang Kami</a></li>
                                 <li class="dropdown"><a href="{{url('/manajemen')}}">Manajemen</a></li>
                                 <li class="dropdown"><a href="{{url('/penghargaan')}}">Penghargaan</a></li>
-								<li class="dropdown"><a href="{{url('/struktur')}}">Stuktur Organisasi</a>
+								{{--  <li class="dropdown"><a href="{{url('/struktur')}}">Stuktur Organisasi</a>
 									<ul>
 										<li><a href="blog.html">Our Blog</a></li>
                                         <li><a href="blog-detail.html">Blog Detail</a></li>
 								    </ul>
-								</li>
+								</li>  --}}
                                 <li><a href="{{url('/kontak')}}">Hubungi Kami</a></li>
                             </ul>
                         </div>
@@ -153,8 +153,8 @@
         <!-- Social Nav -->
 		<ul class="social-nav">
 			<li class="facebook"><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-			<li class="twitter"><a href="#"><span class="fa fa-twitter"></span></a></li>
-			<li class="linkedin"><a href="#"><span class="fa fa-linkedin"></span></a></li>
+			<li class="twitter"><a href="#"><span class="fa fa-instagram"></span></a></li>
+			{{--  <li class="linkedin"><a href="#"><span class="fa fa-linkedin"></span></a></li>  --}}
 		</ul>
         <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
             <div class="slide-item">
@@ -167,12 +167,12 @@
                     <div class="row clearfix">
                         <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-2 content-column">
                             <div class="inner-column">
-                                <div class="title">PT. SEMEN INDONESIA (Persero)</div>
+                                <div class="title"></div>
                                 <h1>Dana Pensiun <br> Semen Gresik</h1>
-                                <div class="text">Jl. Kapten Dulasim Gg. 1 No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122</div>
-                                <div class="btns-box">
+                                <div class="text">Jl. R.A. Kartini No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122</div>
+                                {{--  <div class="btns-box">
                                     <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Free Consultation <i class="arrow flaticon-right"></i></span></a>
-                                </div>
+                                </div>  --}}
                             </div>
                         </div>
                     </div>
@@ -188,9 +188,9 @@
                     <div class="row clearfix">
                         <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-2 content-column">
                             <div class="inner-column">
-                                <div class="title">PT. SEMEN INDONESIA (Persero)</div>
+                                <div class="title"></div>
                                 <h1>Dana Pensiun <br> Semen Gresik</h1>
-                                <div class="text">Jl. Kapten Dulasim Gg. 1 No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122</div>
+                                <div class="text">Jl. R.A. Kartini No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122</div>
                                 <div class="btns-box">
                                     <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Free Consultation <i class="arrow flaticon-right"></i></span></a>
                                 </div>
@@ -209,9 +209,9 @@
                     <div class="row clearfix">
                         <div class="col-lg-10 col-md-12 col-sm-12 offset-lg-2 content-column">
                             <div class="inner-column">
-                                <div class="title">PT. SEMEN INDONESIA (Persero)</div>
+                                <div class="title"></div>
                                 <h1>Dana Pensiun <br> Semen Gresik</h1>
-                                <div class="text">Jl. Kapten Dulasim Gg. 1 No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122</div>
+                                <div class="text">Jl. R.A. Kartini No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122</div>
                                 <div class="btns-box">
                                     <a href="contact.html" class="theme-btn btn-style-one"><span class="txt">Free Consultation <i class="arrow flaticon-right"></i></span></a>
                                 </div>
@@ -226,65 +226,7 @@
 
     <!-- chooseus-section -->
     <section class="chooseus-section alternet-2">
-        <div class="auto-container">
-            <div class="sec-title centered">
-                <h2>Reason for Choosing Us</h2>
-                <div class="text">
-                    <p>Obligations of business it will frequently occur that pleasures have to be repudiated & annoyances accepted.</p>
-                </div>
-            </div>
 
-            <div class="row clearfix">
-                <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
-                    <div class="chooseus-block-one wow fadeInUp animated animated" data-wow-delay="00ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                            	<div class="icon flaticon-file"></div>
-                            </div>
-                            <h4>Corporate Law</h4>
-                            <p>Indignations & dislike men beguiled demoralized.</p>
-                            <a href="family_law.html"><i class="flaticon-right-arrow"></i>More Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
-                    <div class="chooseus-block-one wow fadeInUp animated animated" data-wow-delay="200ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                            	<div class="icon flaticon-file-1"></div>
-                            </div>
-                            <h4>Real Estate Law</h4>
-                            <p>Business it will frequently pleasures repudiated.</p>
-                            <a href="family_law.html"><i class="flaticon-right-arrow"></i>More Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
-                    <div class="chooseus-block-one wow fadeInUp animated animated" data-wow-delay="400ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                            	<div class="icon flaticon-umbrella-1"></div>
-                            </div>
-                            <h4>Insurance Law</h4>
-                            <p>Indignations & dislike men beguiled demoralized.</p>
-                            <a href="family_law.html"><i class="flaticon-right-arrow"></i>More Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 chooseus-block">
-                    <div class="chooseus-block-one wow fadeInUp animated animated" data-wow-delay="600ms" data-wow-duration="1500ms">
-                        <div class="inner-box">
-                            <div class="icon-box">
-                            	<div class="icon flaticon-group"></div>
-                            </div>
-                            <h4>Family Law</h4>
-                            <p>Business it will frequently pleasures repudiated.</p>
-                            <a href="family_law.html"><i class="flaticon-right-arrow"></i>More Details</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </section>
     <!-- chooseus-section end -->
 
@@ -490,85 +432,7 @@
 
     <!-- project-style-two -->
     <section class="project-style-two">
-        <div class="outer-container">
 
-            <div class="sec-title centered">
-                <h2>Our Case Studies</h2>
-                <div class="text">Long established fact that a reader will be distracted by the <br />readable content of a page.</div>
-            </div>
-
-            <div class="four-item-carousel owl-carousel owl-theme owl-dots-none owl-nav-none">
-                <div class="project-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <div class="pattern-layer">
-                                <div class="pattern-2" style="background-image: url({{ url('webprofil/images/shape/pattern-17.png') }});"></div>
-                            </div>
-                            <img src="images/resource/case-2.jpg" alt="">
-                        </figure>
-                        <div class="content-box">
-                            <div class="text">
-                                <span>@ Presentation</span>
-                                <h4><a href="case-details.html">Helping Bigbasket Scale Up</a></h4>
-                            </div>
-                            <div class="view-btn"><a href="images/resource/case-2.jpg" class="lightbox-image" data-fancybox="gallery">+</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <div class="pattern-layer">
-                                <div class="pattern-2" style="background-image: url({{ url('webprofil/images/shape/pattern-17.png') }});"></div>
-                            </div>
-                            <img src="images/resource/case-3.jpg" alt="">
-                        </figure>
-                        <div class="content-box">
-                            <div class="text">
-                                <span>@ Presentation</span>
-                                <h4><a href="case-details.html">Helping Bigbasket Scale Up</a></h4>
-                            </div>
-                            <div class="view-btn"><a href="images/resource/case-3.jpg" class="lightbox-image" data-fancybox="gallery">+</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <div class="pattern-layer">
-                                <div class="pattern-2" style="background-image: url({{ url('webprofil/images/shape/pattern-17.png') }});"></div>
-                            </div>
-                            <img src="images/resource/case-4.jpg" alt="">
-                        </figure>
-                        <div class="content-box">
-                            <div class="text">
-                                <span>@ Presentation</span>
-                                <h4><a href="case-details.html">Helping Bigbasket Scale Up</a></h4>
-                            </div>
-                            <div class="view-btn"><a href="images/resource/case-4.jpg" class="lightbox-image" data-fancybox="gallery">+</a></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-block-one">
-                    <div class="inner-box">
-                        <figure class="image-box">
-                            <div class="pattern-layer">
-                                <div class="pattern-2" style="background-image: url({{ url('webprofil/images/shape/pattern-17.png') }});"></div>
-                            </div>
-                            <img src="images/resource/case-5.jpg" alt="">
-                        </figure>
-                        <div class="content-box">
-                            <div class="text">
-                                <span>@ Presentation</span>
-                                <h4><a href="case-details.html">Helping Bigbasket Scale Up</a></h4>
-                            </div>
-                            <div class="view-btn"><a href="images/resource/case-5.jpg" class="lightbox-image" data-fancybox="gallery">+</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="more-text centered"><p>Interested to work with us? <a href="case-details.html">Let’s get started</a></p></div>
-        </div>
     </section>
     <!-- project-style-two end -->
 
@@ -825,98 +689,13 @@
 
 	<!-- Team Section -->
 	<section class="team-section">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2>Our Professional Team</h2>
-			</div>
-			<div class="row clearfix">
 
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ url('webprofil/images/resource/team-1.jpg')}}" alt="" />
-						</div>
-						<div class="lower-box">
-							<h5><a href="our_team.html">Chris JAriko</a></h5>
-							<div class="designation">Founder and Ceo</div>
-							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ url('webprofil/images/resource/team-2.jpg')}}" alt="" />
-						</div>
-						<div class="lower-box">
-							<h5><a href="our_team.html">ALina Kevin</a></h5>
-							<div class="designation">Senior Attorney</div>
-							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ url('webprofil/images/resource/team-3.jpg')}}" alt="" />
-						</div>
-						<div class="lower-box">
-							<h5><a href="our_team.html">Senior Attorney</a></h5>
-							<div class="designation">Junior Attorney</div>
-							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="450ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ url('webprofil/images/resource/team-4.jpg')}}" alt="" />
-						</div>
-						<div class="lower-box">
-							<h5><a href="our_team.html">Polard Andrew</a></h5>
-							<div class="designation">Financial Attorney</div>
-							<a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
 	</section>
 	<!-- End Team Section -->
 
 	<!-- Clients Section -->
 	<section class="clients-section">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2>TRUSTED COMPANIES</h2>
-				<div class="text">Nemo enim ipsam voluptatem quia voluptas sit asper aut odit aut fugit, sed quia consequuntur magni doloreos <br> qui ratione voluptatem sequi nesciunt aorro ruisea</div>
-			</div>
-			<div class="inner-container">
-				<div class="sponsors-outer">
-					<!--Sponsors Carousel-->
-					<ul class="sponsors-carousel owl-carousel owl-theme">
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+
 	</section>
 	<!-- End Clients Section -->
 
