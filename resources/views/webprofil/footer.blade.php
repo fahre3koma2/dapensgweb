@@ -58,11 +58,11 @@
                                     </li>
                                     <li>
                                         <span class="icon flaticon-email-2"></span>
-                                        <a href="mailto:Info@counsellawfirm.com">info@dapensg.com</a>
+                                        <a href="mailto:dpsg@indo.net.id">dpsg@indo.net.id</a>
                                     </li>
                                     <li>
                                         <span class="icon flaticon-maps-and-flags"></span>
-                                        Jl. Kapten Dulasim Gg. 1 No.23, Injen Timur, Gapurosukolilo, <br> Kabupaten Gresik, Jawa Timur 61122
+                                        Jl. R.A. Kartini No.23, Injen Timur, Gapurosukolilo, <br> Kabupaten Gresik, Jawa Timur 61122
                                     </li>
                                 </ul>
                             </div>
