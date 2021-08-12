@@ -25,7 +25,7 @@
 
 **********************************************/
 
-/* 
+/*
 	font-family: 'Bellefair', serif;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Oswald', sans-serif;
@@ -41,14 +41,14 @@
 @import url('jquery.fancybox.min.css');
 @import url('jquery.mCustomScrollbar.min.css');
 
-/*** 
+/***
 
 ====================================================================
 	Reset
 ====================================================================
 
  ***/
- 
+
 * {
 	margin:0px;
 	padding:0px;
@@ -56,7 +56,7 @@
 	outline:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Global Settings
@@ -99,7 +99,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 input,button,select,textarea{
-	
+
 }
 
 textarea{
@@ -174,7 +174,7 @@ h6{
 ul,li{
 	list-style:none;
 	padding:0px;
-	margin:0px;	
+	margin:0px;
 }
 
 img{
@@ -194,7 +194,7 @@ img{
 }
 
 .centered{
-	text-align:center;	
+	text-align:center;
 }
 
 /***
@@ -473,10 +473,10 @@ img{
 img{
 	display:inline-block;
 	max-width:100%;
-	height:auto;	
+	height:auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Section Title
@@ -493,7 +493,7 @@ img{
 .sec-title h2{
     color:#00204c;
 	padding-bottom:20px;
-	text-transform:uppercase; 
+	text-transform:uppercase;
 }
 
 .sec-title h2:before{
@@ -526,7 +526,7 @@ img{
 	text-align: center !important;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Header style
@@ -575,7 +575,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .main-header .header-upper{
@@ -750,7 +750,7 @@ img{
 	-moz-animation-iteration-count: 1;
 	-op-animation-iteration-count: 1;
 	-webkit-animation-iteration-count: 1;
-	animation-iteration-count: 1;	
+	animation-iteration-count: 1;
 }
 
 .main-menu .navigation > li > a{
@@ -780,7 +780,7 @@ img{
 
 .sticky-header .main-menu .navigation > li:before,
 .sticky-header .main-menu .navigation > li:after{
-	
+
 }
 
 .main-menu .navigation > li:hover > a,
@@ -811,7 +811,7 @@ img{
 
 .main-menu .navigation > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li{
@@ -885,7 +885,7 @@ img{
 	font-size:16px;
 	font-weight:normal;
 	text-align:center;
-	z-index:5;	
+	z-index:5;
 }
 
 .main-menu .navigation > li > ul > li.dropdown:hover > a:after{
@@ -912,7 +912,7 @@ img{
 
 .main-menu .navigation > li > ul > li > ul.from-right{
 	left:auto;
-	right:0px;	
+	right:0px;
 }
 
 .main-menu .navigation > li > ul > li > ul > li{
@@ -922,7 +922,7 @@ img{
 }
 
 .main-menu .navigation > li > ul > li > ul > li:last-child{
-	border-bottom:none;	
+	border-bottom:none;
 }
 
 .main-menu .navigation > li > ul > li > ul > li > a{
@@ -994,7 +994,7 @@ img{
 	-moz-transition:all 300ms ease;
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 300ms ease;
-	-o-transition:all 300ms ease;	
+	-o-transition:all 300ms ease;
 }
 
 .main-menu .navbar-collapse > ul li.dropdown .dropdown-btn{
@@ -1013,7 +1013,7 @@ img{
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Mobile Menu
@@ -1046,7 +1046,7 @@ img{
 .mobile-menu .nav-logo{
 	position:relative;
 	padding:20px 20px;
-	text-align:left;	
+	text-align:left;
 }
 
 .mobile-menu .nav-logo img{
@@ -1077,7 +1077,7 @@ img{
     -webkit-transition: all 900ms ease;
     -ms-transition: all 900ms ease;
     -o-transition: all 900ms ease;
-	
+
 	-webkit-transition-delay: 500ms;
 	-moz-transition-delay: 500ms;
 	-ms-transition-delay: 500ms;
@@ -1097,7 +1097,7 @@ img{
 	-webkit-transform: translateX(0%);
 	-ms-transform: translateX(0%);
 	transform: translateX(0%);
-	
+
 
 }
 
@@ -1113,7 +1113,7 @@ img{
 	padding: 0px 0px;
 	z-index: 5;
 	border-radius: 0px;
-	
+
 	transition: all 900ms ease;
     -moz-transition: all 900ms ease;
     -webkit-transition: all 900ms ease;
@@ -1251,7 +1251,7 @@ img{
 	padding:15px 0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Scroll To Top style
@@ -1278,7 +1278,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;		
+	transition:all 300ms ease;
 }
 
 .scroll-to-toped:hover{
@@ -1286,7 +1286,7 @@ img{
 	background:#000000;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section
@@ -1576,7 +1576,7 @@ img{
 	background-color:#e1a122;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section
@@ -1694,7 +1694,7 @@ img{
 	background-color:#00204c;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Welcome Section
@@ -1809,7 +1809,7 @@ img{
 	background-color:#f9f9f9;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -2071,7 +2071,7 @@ img{
     100% {box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);}
 }
 
-/*** 
+/***
 
 ====================================================================
 	Practice Section
@@ -2217,7 +2217,7 @@ img{
 	-o-transition:all 500ms ease;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section One
@@ -2243,7 +2243,7 @@ img{
 	height:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .fluid-section-one .image-column:before{
@@ -2273,7 +2273,7 @@ img{
 	background-repeat:no-repeat;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -2293,7 +2293,7 @@ img{
 }
 
 .accordion-box .block.active-block{
-	
+
 }
 
 .accordion-box .block .acc-btn{
@@ -2375,7 +2375,7 @@ img{
 }
 
 .accordion-box .block .acc-content.current{
-	display:block;	
+	display:block;
 }
 
 .accordion-box .block .content{
@@ -2393,7 +2393,7 @@ img{
 }
 
 .accordion-box .block .content p:last-child{
-	margin-bottom:0px;	
+	margin-bottom:0px;
 }
 
 .fluid-section-one .content-column{
@@ -2471,7 +2471,7 @@ img{
 }
 
 .default-form .form-group .btn-detail{
-	
+
 }
 
 /*Custom Select*/
@@ -2495,7 +2495,7 @@ img{
 	position:relative;
 	top:2px;
 	text-indent:0px;
-	color:#333333;	
+	color:#333333;
 }
 
 .form-group .ui-button .ui-icon:before{
@@ -2518,7 +2518,7 @@ img{
 }
 
 .ui-widget.ui-widget-content{
-	
+
 }
 
 .ui-menu .ui-menu-item{
@@ -2526,7 +2526,7 @@ img{
 }
 
 .ui-menu .ui-menu-item:last-child{
-	border:none;	
+	border:none;
 }
 
 .ui-state-active, .ui-widget-content .ui-state-active{
@@ -2546,7 +2546,7 @@ img{
 	background-color:#e1a122;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Team Section
@@ -2679,7 +2679,7 @@ img{
 	color:#111111;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonail Section
@@ -2841,7 +2841,7 @@ img{
 	font-family: 'Bellefair', serif;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Clients Section
@@ -2896,7 +2896,7 @@ img{
 	display:none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	CTA Section Two
@@ -3158,7 +3158,7 @@ img{
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	transition:all 300ms ease;	
+	transition:all 300ms ease;
 }
 
 .main-footer .newsletter-form .form-group input::-webkit-input-placeholder,
@@ -3185,7 +3185,7 @@ img{
 	text-align:center;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Page Title
@@ -3273,7 +3273,7 @@ img{
 	color:#e1a122;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Case Section
@@ -3379,7 +3379,7 @@ img{
 	background-color:#00204c;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Section Two
@@ -3474,7 +3474,7 @@ img{
 	-o-transition:all 500ms ease;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section Two
@@ -3510,7 +3510,7 @@ img{
 	height:100%;
 	background-repeat:no-repeat;
 	background-position:center center;
-	background-size:cover;	
+	background-size:cover;
 }
 
 .fluid-section-two .image-column .video-box{
@@ -3613,7 +3613,7 @@ img{
 
 .fluid-section-two .image-column .image-box{
 	position:relative;
-	display:none;	
+	display:none;
 }
 
 .fluid-section-two .image-column .image-box img{
@@ -3662,7 +3662,7 @@ img{
 	border-right:1px solid rgba(255,255,255,0.20);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Page Section
@@ -3769,7 +3769,7 @@ img{
 	transform:scale(1.07,1.07) rotate(3deg);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Services Detail Section
@@ -3864,7 +3864,7 @@ img{
 	display:block;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Case Study Section
@@ -3974,7 +3974,7 @@ img{
 	color:#e1a122;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Map Section
@@ -4013,7 +4013,7 @@ img{
 	height:500px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Form Section
@@ -4095,7 +4095,7 @@ img{
 .contact-form input.error,
 .contact-form select.error,
 .contact-form textarea.error{
-	border-color:#ff0000 !important;	
+	border-color:#ff0000 !important;
 }
 
 .contact-form label.error{
@@ -4106,10 +4106,10 @@ img{
 	text-transform:uppercase;
 	font-size:12px;
 	color:#ff0000;
-	font-weight:500;	
+	font-weight:500;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Info Section
@@ -4328,7 +4328,7 @@ img{
 
 .banner-section.style-three .slide-item{
   position: relative;
-  padding: 250px 0px 250px 0px;
+  padding: 150px 0px 250px 0px;
   overflow: hidden;
 }
 
@@ -4722,7 +4722,7 @@ img{
   -webkit-animation: zoom-fade 5s infinite linear;
   animation: zoom-fade 5s infinite linear;
 }
-#image_block_1 .image-box .video-inner .video-btn:after, 
+#image_block_1 .image-box .video-inner .video-btn:after,
 #image_block_1 .image-box .video-inner .video-btn:before {
   width: 80px;
   height: 80px;
@@ -5572,7 +5572,7 @@ img{
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -5608,7 +5608,7 @@ img{
 
 .sidebar .search-box .form-group{
 	position:relative;
-	margin:0px;	
+	margin:0px;
 }
 
 .sidebar .search-box .form-group input[type="text"],
@@ -5811,7 +5811,7 @@ img{
 .sidebar .popular-tags a:hover{
 	border-color:#e1a122;
 	background-color:#e1a122;
-	color:#ffffff;	
+	color:#ffffff;
 }
 
 
@@ -5962,7 +5962,7 @@ img{
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Styled Pagination
@@ -6362,7 +6362,7 @@ img{
 	color: #e1a122;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -6409,7 +6409,7 @@ img{
 }
 
 .sidebar-page-container .comments-area .reply-comment{
-	margin-left:60px;	
+	margin-left:60px;
 }
 
 .sidebar-page-container .comments-area .comment-box .author-thumb{
@@ -6484,7 +6484,7 @@ img{
 
 .comment-form .form-group{
 	position:relative;
-	margin-bottom:30px;	
+	margin-bottom:30px;
 }
 
 .ui-selectmenu-button.ui-button,
@@ -6532,5 +6532,5 @@ img{
 
 .comment-form .form-group input[type="submit"]:hover,
 .comment-form button:hover{
-	
+
 }
