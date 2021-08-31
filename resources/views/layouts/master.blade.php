@@ -16,6 +16,9 @@
         <!-- Responsive datatable examples -->
         <link href="{{ url('assets/plugins/datatables/responsive.bootstrap4.min.css') }}" rel="stylesheet" type="text/css" />
 
+        <link href="{{ url('assets/plugins/dropzone/dist/dropzone.css') }}" rel="stylesheet" type="text/css">
+        <link href="{{ url('assets/plugins/dropify/css/dropify.min.css') }}" rel="stylesheet">
+
         <link href="{{ url('assets/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ url('assets/css/icons.css') }}" rel="stylesheet" type="text/css">
         <link href="{{ url('assets/css/style.css') }}" rel="stylesheet" type="text/css">
@@ -47,6 +50,12 @@
                     <div class="menu-extras topbar-custom">
 
                         <ul class="list-inline float-right mb-0">
+                            <li class="list-inline-item hide-phone app-search">
+                                <form role="search" class="">
+                                    <input type="text" placeholder="Search..." class="form-control">
+                                    <a href=""><i class="fa fa-search"></i></a>
+                                </form>
+                            </li>
                             <!-- User-->
                             <li class="list-inline-item dropdown notification-list">
                                 <a class="nav-link dropdown-toggle arrow-none waves-effect nav-user" data-toggle="dropdown" href="#" role="button"

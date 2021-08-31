@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\webprofil\HomeController as ProfilHomeController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AkutansiController;
 use App\Http\Controllers\TataKelolaController;
 use App\Http\Controllers\KearsipanController;
@@ -37,6 +38,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         return view('dashboard');
     })->name('dashboard');
     Route::resource('/user', UserController::class);
+    Route::resource('/admin', AdminController::class);
     Route::resource('/akutansi', AkutansiController::class);
     Route::resource('/inventasi', InventasiController::class);
     Route::resource('/kepesertaan', KepesertaanController::class);

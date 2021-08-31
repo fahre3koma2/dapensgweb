@@ -5,20 +5,20 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class AkutansiController extends Controller
+class AdminController extends Controller
 {
 
     public function index()
     {
         //
-        return view('akutansi.index');
+        return view('admin.index');
     }
 
 
     public function create()
     {
         //
-        return view('akutansi.create');
+        return view('admin.create');
     }
 
 

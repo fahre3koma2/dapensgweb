@@ -11,10 +11,10 @@
             <div class="btn-group pull-right">
                 <ol class="breadcrumb hide-phone p-0 m-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Kepesertaan</li>
+                    <li class="breadcrumb-item active">Admin File</li>
                 </ol>
             </div>
-            <h4 class="page-title">Home</h4>
+            <h4 class="page-title">Data File Admin</h4>
         </div>
     </div>
 </div>
@@ -30,7 +30,9 @@
 <div class="col-lg-12 col-sm-12">
     <div class="card">
         <div class="card-body table-responsive">
-            <h5 class="header-title">Data Kepersetaan</h5>
+            <a href="{{ url('/admin/create') }}" class="btn btn-primary float-right"><i class="fa fa-plus"></i> Tambah File</a>
+            <h5 class="header-title">Data File Admin</h5>
+            <br>
             <div class="">
                 <table id="datatable2" class="table">
                     <thead>
