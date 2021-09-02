@@ -70,7 +70,7 @@
 						</div>
 						<div class="lower-box">
 							<h5><a href="our_team.html">Sudartini, SE. </a></h5>
-							<div class="designation">Plt. Direktur</div>
+							<div class="designation">Direktur</div>
 							{{--  <a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>  --}}
 						</div>
 					</div>
@@ -84,7 +84,7 @@
 						</div>
 						<div class="lower-box">
 							<h5><a href="our_team.html">Nur Widjajanti, SE</a></h5>
-							<div class="designation">Plt. Direktur Utama</div>
+							<div class="designation">Direktur Utama</div>
 							{{--  <a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>  --}}
 						</div>
 					</div>

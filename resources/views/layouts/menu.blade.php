@@ -24,10 +24,6 @@
                 </li>
 
                 <li class="has-submenu">
-                    <a href="{{url('/kearsipan')}}"><i class="mdi mdi-file-multiple"></i>Kearsipan</a>
-                </li>
-
-                <li class="has-submenu">
                     <a href="{{url('/tatakelola')}}"><i class="mdi mdi-google-pages"></i>Tata Kelola</a>
                 </li>
 

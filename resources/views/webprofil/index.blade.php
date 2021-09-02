@@ -158,7 +158,7 @@
 		</ul>
         <div class="banner-carousel owl-theme owl-carousel owl-dots-none">
             <div class="slide-item">
-                <div class="image-layer" style="background-image:url({{ url('webprofil/images/main-slider/banner-7.jpg') }})"></div>
+                <div class="image-layer" style="background-image:url({{ url('webprofil/images/main-slider/banner7.jpg') }})"></div>
                 <div class="pattern-layer">
                     <div class="pattern-3" style="background-image: url({{ url('webprofil/images/shape/pattern-28.png') }});"></div>
                     <div class="pattern-4" style="background-image: url({{ url('webprofil/images/shape/pattern-29.png') }});"></div>
@@ -177,7 +177,7 @@
                 </div>
             </div>
             <div class="slide-item">
-                <div class="image-layer" style="background-image:url({{ url('webprofil/images/main-slider/banner-8.jpg') }})"></div>
+                <div class="image-layer" style="background-image:url({{ url('webprofil/images/main-slider/banner8.jpg') }})"></div>
                 <div class="pattern-layer">
                     <div class="pattern-3" style="background-image: url({{ url('webprofil/images/shape/pattern-28.png') }});"></div>
                     <div class="pattern-4" style="background-image: url({{ url('webprofil/images/shape/pattern-29.png') }});"></div>
@@ -196,7 +196,7 @@
                 </div>
             </div>
             <div class="slide-item">
-                <div class="image-layer" style="background-image:url({{ url('webprofil/images/main-slider/banner-9.jpg') }})"></div>
+                <div class="image-layer" style="background-image:url({{ url('webprofil/images/main-slider/banner9.jpg') }})"></div>
                 <div class="pattern-layer">
                     <div class="pattern-3" style="background-image: url({{ url('webprofil/images/shape/pattern-28.png') }});"></div>
                     <div class="pattern-4" style="background-image: url({{ url('webprofil/images/shape/pattern-29.png') }});"></div>
