@@ -23,8 +23,10 @@ use App\Http\Controllers\InventasiController;
 */
 
 Route::get('/', function () {
-    return view('webprofil.index');
+    return view('auth.login');
 });
+
+Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
 Route::get('/about', [ProfilHomeController::class, 'about'])->name('about');
 Route::get('/manajemen', [ProfilHomeController::class, 'manajemen'])->name('manajemen');
@@ -32,11 +34,10 @@ Route::get('/penghargaan', [ProfilHomeController::class, 'penghargaan'])->name('
 Route::get('/struktur', [ProfilHomeController::class, 'struktur'])->name('struktur');
 Route::get('/kontak', [ProfilHomeController::class, 'kontak'])->name('kontak');
 
-
-Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
     Route::get('/dashboard', function () {
-        return view('dashboard');
+        return view('webprofil.index');
     })->name('dashboard');
+
     Route::resource('/user', UserController::class);
     Route::resource('/admin', AdminController::class);
     Route::resource('/akutansi', AkutansiController::class);

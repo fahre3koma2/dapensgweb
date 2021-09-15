@@ -17,82 +17,109 @@
 @endsection
 
 @section('contents')
-    <section class="case-section">
-		<div class="auto-container">
-			<div class="inner-container">
-				<div class="clearfix">
-
-					<!-- Image Column -->
-					<div class="image-column col-lg-12 col-md-12 col-sm-12">
-						<div class="inner-column">
-							<div class="image wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-								<img src="{{ url('webprofil/images/resource/case1.jpg')}}" alt="" />
-							</div>
-						</div>
-					</div>
-
-					<!-- Content Column -->
-					<div class="content-column col-lg-12 col-md-12 col-sm-12">
-						<div class="inner-column">
-							<!-- Sec Title -->
-							<div class="sec-title">
-								<h2>Tentang Kami <br> Dana Pensiun Semen Gresik</h2>
-								<div class="text">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et volutate repudiandae sint et molestiae non recusandae earum  rerum hic tenetur a sapiente delectus ut aut reiciendis  voluptatibus maiores alias consequatur aut nerfereni doloribus asperiores repellat.</div>
-							</div>
-							{{--  <div class="text-box">
-								Nam libero tempore, cum soluta nobis est eligenioptio cumque nihil impedit quo minus id quod maxplaceat facere possimus, omnis voluptas.
-								<a href="corporate_law.html" class="arrow flaticon-right"></a>
-							</div>  --}}
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- End Welcome Section -->
-
-	<!-- Fluid Section Two -->
-    <section class="team-section">
-		<div class="auto-container">
-			<!-- Sec Title -->
-			<div class="sec-title centered">
-				<h2>Our Professional Team</h2>
-			</div>
-			<div class="row clearfix">
-                <div class="team-block col-lg-3 col-md-6 col-sm-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9 col-md-9">
+                <span class="name-rog"><div class="hr-line"></div> Tentang Kami</span>
+			<div class="promo-donate">
+			    <div class="col-md-1 dv lv">
+                <span class="ic-love"></span>
                 </div>
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ url('webprofil/images/resource/team1.jpg')}}" alt="" />
-						</div>
-						<div class="lower-box">
-							<h5><a href="our_team.html">Sudartini, SE. </a></h5>
-							<div class="designation">Direktur</div>
-							{{--  <a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>  --}}
-						</div>
-					</div>
-				</div>
-
-				<!-- Team Block -->
-				<div class="team-block col-lg-3 col-md-6 col-sm-12">
-					<div class="inner-box wow fadeInLeft" data-wow-delay="150ms" data-wow-duration="1500ms">
-						<div class="image">
-							<img src="{{ url('webprofil/images/resource/team2.jpg')}}" alt="" />
-						</div>
-						<div class="lower-box">
-							<h5><a href="our_team.html">Nur Widjajanti, SE</a></h5>
-							<div class="designation">Direktur Utama</div>
-							{{--  <a class="arrow flaticon-right-arrow-3" href="our_team.html"></a>  --}}
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<!-- End Fluid Section Two -->
+                <div class="col-md-10 lv">
+                <h3 class="th-name">Коротко о пожертвованиях:</h3>
+                <p class="desctop">
+                Как и все мы нуждаемся в материальной помощи. Нам необходимо арендовать оборудование для игровых серверов, совершенствовать старое и разрабатывать совершенно новое и необычное! Именно по этим причинам мы и ввели систему пожертвований на нашем проекте.
+                <br><br>
+                За пожертвование вы получаете монеты, за которые можно приобрести привилегии на наших серверах.</p>
+                <a href="#" class="love-donate"><span class="ic-loveb"></span> Пожертвовать</a>
+            </div>
+        </div>
+    </div>
+               <div class="col-lg-3 col-md-3">
+                  <div class="right-block">
+                     <div class="n-m">Мониторинг Серверов</div>
+                     <div class="server online">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <div class="server online">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <div class="server online">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <div class="server online">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <div class="server online">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <div class="server online">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <div class="server online not-hr">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <div class="server online not-hr">
+                        <div class="second circle">
+                           <strong></strong>
+                        </div>
+                        <div class="server_name"><a href="#">01 Сервер</a></div>
+                        <div class="server_players">
+                           Онлайн: 50/100
+                        </div>
+                     </div>
+                     <p class="tdx-strom"><span class="online-o"></span> Общий онлайн: 2173</p>
+                  </div>
+                  <div class="right-block vk">
+                     <div class="n-m">Мониторинг Серверов</div>
+                     <div class="widget-vk">
+                        WIDGET VK
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
 
 @endsection
