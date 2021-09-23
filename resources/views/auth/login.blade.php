@@ -30,13 +30,13 @@
             {{ session('status') }}
         </div>
     @endif
-	<section class="fxt-template-animation fxt-template-layout17" data-bg-image="{{ url('login/img/figure/bg17.jpg') }}">
+	<section class="fxt-template-animation fxt-template-layout17" data-bg-image="{{ url('logn/img/figure/bg17.jpg') }}">
 		<div class="container">
 			<div class="row align-items-center justify-content-center">
 				<div class="col-xl-6 col-lg-7 col-sm-12 col-12 fxt-bg-color">
 					<div class="fxt-content">
 						<div class="fxt-header">
-							<a href="login-17.html" class="fxt-logo"><img src="{{ url('login/img/logo17.png') }}" alt="Logo"></a>
+							<a href="login-17.html" class="fxt-logo"><img src="{{ url('logn/img/logo17.png') }}" alt="Logo"></a>
 						</div>
 						<div class="fxt-form">
 							<form method="POST" action="{{ route('login') }}">
