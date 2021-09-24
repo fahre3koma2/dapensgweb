@@ -28,15 +28,15 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
+Route::get('/dashboard', function () {
+        return view('webprofil.index');
+    })->name('dashboard');
+
 Route::get('/about', [ProfilHomeController::class, 'about'])->name('about');
 Route::get('/manajemen', [ProfilHomeController::class, 'manajemen'])->name('manajemen');
 Route::get('/penghargaan', [ProfilHomeController::class, 'penghargaan'])->name('penghargaan');
 Route::get('/struktur', [ProfilHomeController::class, 'struktur'])->name('struktur');
 Route::get('/kontak', [ProfilHomeController::class, 'kontak'])->name('kontak');
-
-    Route::get('/dashboard', function () {
-        return view('webprofil.index');
-    })->name('dashboard');
 
     Route::resource('/user', UserController::class);
     Route::resource('/admin', AdminController::class);

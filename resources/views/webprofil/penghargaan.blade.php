@@ -18,167 +18,245 @@
 
 @section('contents')
     <div class="container">
-            <div class="row">
-               <div class="col-lg-9 col-md-9">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
                  <span class="name-rog">
-				 <div class="hr-line"></div> Penghargaan
+				    <div class="hr-line"></div> Hukum Online
 				 </span>
-
 
 				 <div class="section-how">
-				 <span class="num-1">
-				 01
-				 </span>
-				 <div class="reved">
-				 <div class="arrow-road"></div>
-				 <p>
-				 Для начала вам нужно зарегистрировать свой игровой аккаунт перейдя к регистрации.
-				 Запомните, что только Вы в силах защитить свой аккаунт от рук злоумышленников установив сложный пароль, например: <span style="color: #000;">xR3E8g1bHjLM</span>
-				 </p>
-				 </div>
-				 </div>
+                    <span class="num-1"> 01 </span>
+                    <div class="reved">
+                        <div class="arrow-road"></div>
+                        <p>
+                        Для начала вам нужно зарегистрировать свой игровой аккаунт перейдя к регистрации.
+                        Запомните, что только Вы в силах защитить свой аккаунт от рук злоумышленников установив сложный пароль, например: <span style="color: #000;">xR3E8g1bHjLM</span>
+                        </p>
+                    </div>
+                </div>
 
-				  <div class="section-how">
-				 <span class="num-2">
-				 02
-				 </span>
-				 <div class="reved">
-				 <div class="arrow-road"></div>
-				 <p>
-				 Перед непосредственным началом игры Вам в обязательном порядке необходимо ознакомиться с правилами игры на игровых серверах StreamCraft.net. Все эти правила призваны сделать игру максимально честной, комфортной и интересной.
-				 </p>
-				 </div>
-				 </div>
+				<div class="section-how">
+                    <span class="num-2">02</span>
+                    <div class="reved">
+                        <div class="arrow-road"></div>
+                        <p>
+                        Перед непосредственным началом игры Вам в обязательном порядке необходимо ознакомиться с правилами игры на игровых серверах StreamCraft.net. Все эти правила призваны сделать игру максимально честной, комфортной и интересной.
+                        </p>
+                    </div>
+                </div>
 
-				  <div class="section-how">
-				 <span class="num-3">
-				 03
-				 </span>
-				 <div class="reved">
-				 <div class="arrow-road"></div>
-				 <p>
-				 Теперь Вам стоит определиться с тем, какой тематики сервер вам больше нравится. На сегодняшний день мы предлагаем Вам самые стабильные сборки серверов среди русскоязычного Minecraft сообщества на самых последних версиях доступных игровых модов.
-				 </p>
-				 </div>
-				 </div>
+				<div class="section-how">
+				<span class="num-3">03</span>
+                    <div class="reved">
+                        <div class="arrow-road"></div>
+                        <p>
+                        Теперь Вам стоит определиться с тем, какой тематики сервер вам больше нравится. На сегодняшний день мы предлагаем Вам самые стабильные сборки серверов среди русскоязычного Minecraft сообщества на самых последних версиях доступных игровых модов.
+                        </p>
+                    </div>
+                </div>
+                <br>
 
-				 <div class="section-how">
-				 <span class="num-4">
-				 04
-				 </span>
-				 <div class="reved">
-				 <div class="arrow-road"></div>
-				 <p>
-
-Если первые три пункта Вы успешно преодолели - поздравляем, остается последний заключительный пункт. Сейчас Вам необходимо перейти на специальную страницу с выбором лаунчера для вашей операционной системы. Перейти на эту страничку можно нажав на красиво висящий щит в шапке сайта со словами 'Скачать лаунчер'
-				 </p>
-				 </div>
-				 </div>
-
-				 <div class="video-block">
-				  <span class="name-rog">
-				 <div class="hr-line"></div> ВИДЕО ИНСТРУКЦИЯ
-				 </span>
-				  <div class="section-how">
-				 <span class="num-video">
-				 <span class="video-icons"></span>
-				 </span>
-				 <div class="reved">
-				 <div class="arrow-roadx"></div>
-				 <span class="video-center">
-				<iframe width="703" height="315" src="https://www.youtube.com/embed/DrCUuWODgQc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <span class="name-rog">
+				    <div class="hr-line"></div> List Data
 				</span>
-				 </div>
-				 </div>
-               </div>
-
-
-               </div>
-               <div class="col-lg-3 col-md-3">
-                  <div class="right-block">
-                     <div class="n-m">Мониторинг Серверов</div>
-                     <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <div class="server online not-hr">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <div class="server online not-hr">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
-                     </div>
-                     <p class="tdx-strom"><span class="online-o"></span> Общий онлайн: 2173</p>
-                  </div>
-                  <div class="right-block vk">
-                     <div class="n-m">Мониторинг Серверов</div>
-                     <div class="widget-vk">
-                        WIDGET VK
-                     </div>
-                  </div>
-               </div>
+                <br>
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Judul</th>
+                            <th>Deskripsi</th>
+                            <th>Nomor Regulasi</th>
+                            <th>Sektor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Andi</td>
+                            <td>Jakarta Selatan</td>
+                            <td>Web Designer</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Budi</td>
+                            <td>Bandung</td>
+                            <td>Web Developer</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>Cahyo</td>
+                            <td>Bekasi</td>
+                            <td>Web Programmer</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>Darma</td>
+                            <td>Bali</td>
+                            <td>Teknisi</td>
+                            <td>35</td>
+                        </tr>
+                          <tr>
+                            <td>Andi</td>
+                            <td>Jakarta Selatan</td>
+                            <td>Web Designer</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Budi</td>
+                            <td>Bandung</td>
+                            <td>Web Developer</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>Cahyo</td>
+                            <td>Bekasi</td>
+                            <td>Web Programmer</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>Darma</td>
+                            <td>Bali</td>
+                            <td>Teknisi</td>
+                            <td>35</td>
+                        </tr>
+                          <tr>
+                            <td>Andi</td>
+                            <td>Jakarta Selatan</td>
+                            <td>Web Designer</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Budi</td>
+                            <td>Bandung</td>
+                            <td>Web Developer</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>Cahyo</td>
+                            <td>Bekasi</td>
+                            <td>Web Programmer</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>Darma</td>
+                            <td>Bali</td>
+                            <td>Teknisi</td>
+                            <td>35</td>
+                        </tr>
+                          <tr>
+                            <td>Andi</td>
+                            <td>Jakarta Selatan</td>
+                            <td>Web Designer</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Budi</td>
+                            <td>Bandung</td>
+                            <td>Web Developer</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>Cahyo</td>
+                            <td>Bekasi</td>
+                            <td>Web Programmer</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>Darma</td>
+                            <td>Bali</td>
+                            <td>Teknisi</td>
+                            <td>35</td>
+                        </tr>
+                          <tr>
+                            <td>Andi</td>
+                            <td>Jakarta Selatan</td>
+                            <td>Web Designer</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Budi</td>
+                            <td>Bandung</td>
+                            <td>Web Developer</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>Cahyo</td>
+                            <td>Bekasi</td>
+                            <td>Web Programmer</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>Darma</td>
+                            <td>Bali</td>
+                            <td>Teknisi</td>
+                            <td>35</td>
+                        </tr>
+                          <tr>
+                            <td>Andi</td>
+                            <td>Jakarta Selatan</td>
+                            <td>Web Designer</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Budi</td>
+                            <td>Bandung</td>
+                            <td>Web Developer</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>Cahyo</td>
+                            <td>Bekasi</td>
+                            <td>Web Programmer</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>Darma</td>
+                            <td>Bali</td>
+                            <td>Teknisi</td>
+                            <td>35</td>
+                        </tr>
+                          <tr>
+                            <td>Andi</td>
+                            <td>Jakarta Selatan</td>
+                            <td>Web Designer</td>
+                            <td>21</td>
+                        </tr>
+                        <tr>
+                            <td>Budi</td>
+                            <td>Bandung</td>
+                            <td>Web Developer</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>Cahyo</td>
+                            <td>Bekasi</td>
+                            <td>Web Programmer</td>
+                            <td>29</td>
+                        </tr>
+                        <tr>
+                            <td>Darma</td>
+                            <td>Bali</td>
+                            <td>Teknisi</td>
+                            <td>35</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><br><br>
             </div>
-         </div>
+        </div>
+    </div>
 
 @endsection
+@section('js')
+    <script>
+
+        $(document).ready(function() {
+            $('#example').DataTable( {
+                "order": [[ 3, "desc" ]]
+            } );
+        } );
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.2/js/jquery.dataTables.min.js"></script>
+@endsection
+

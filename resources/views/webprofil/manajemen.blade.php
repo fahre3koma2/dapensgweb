@@ -22,7 +22,7 @@
                <div class="col-lg-9 col-md-9">
                   <span class="name-rog">
                      <div class="hr-line"></div>
-                     Manajemen
+                     Newsfeed
                   </span>
                   <div class="promo-donate">
                      <div class="col-md-1 dv lv">

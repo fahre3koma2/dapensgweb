@@ -30,20 +30,33 @@
                   <div class="col-12">
                      <div class="nav-header d-flex justify-content-between align-items-center">
                         <a href="{{url('/')}}" class="logo" title="LOGO">
-                        <img class="logo-img" src="{{ url('webprof/img/logo.png')}}" alt="LOGO">
-                        <img class="alt-logo-img" src="{{ url('webprof/img/logo-alt.png')}}" alt="LOGO">
+                        <img class="logo-img" src="{{ url('webprof/img/logo.png')}}" width="20%" alt="LOGO">
+                        <img class="alt-logo-img" src="{{ url('webprof/img/logo-alt2.png')}}" alt="LOGO">
                         </a>
                      </div>
                      <div class="nav-wrap">
                         <ul id="nav" class="nav-wrap__list menu">
-                           <li class="current"><a href="{{url('/')}}" title="HOME">Home</a></li>
+                           <li class="current"><a href="{{url('/dasboard')}}" title="HOME">Home</a></li>
                            <li><a href="{{url('/about')}}" title="tentang">Tentang Kami</a></li>
-                           <li><a href="{{url('/manajemen')}}" title="manajemen"><span class="red-fox">Manajemen</span></a></li>
-                           <li><a href="{{url('/penghargaan')}}" title="penghargaan">Penghargaan</a></li>
+                           <li><a href="{{url('/manajemen')}}" title="manajemen">Newsfeed</a></li>
+                           <li><a href="{{url('/penghargaan')}}" title="penghargaan">Hukum Online</a></li>
+                           <div class="dropdown">
+                                <span>
+                                    <div class="drop-ed"></div>
+                                </span>
+                                <div class="dropdown-content">
+                                    <span class="arrow_box"></span>
+                                    <ul class="drop-vape">
+                                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
+                                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @csrf
+                                        </form>
+                                    </ul>
+                                </div>
+                            </div>
                         </ul>
                         <div class="riglt-floats-xs">
-                           <a href="#" class="btn-login"><span class="ic-sx21"></span> Halo, {{ Auth::user()->name; }}</a>
-
+                           <a href="#" class="btn-login"><span class="ic-sx21"></span> Halo, {{ Auth::user()->nickname; }}</a>
                         </div>
                      </div>
                   </div>
@@ -61,9 +74,10 @@
                      <div class="swiper-container">
                         <div class="swiper-wrapper">
                            <div class="swiper-slide" data-hash="slide1">
-                              <div class="col-md-12">
-                                  <img class="img-ste1" src="{{ url('webprof/img/case1.jpg')}}">
-                              </div>
+                                <div class="col-md-10">
+                                    <img class="img-ste1" width="100%" src="{{ url('webprof/img/post3.jpg')}}">
+                                </div>
+
                               {{--  <div class="col-md-6">
                                  <h4 class="name-intro">DANA PENSIUN<br>SEMEN GRESIK</h4>
                                  <span class="hr-intro"></span>
@@ -74,29 +88,13 @@
                               </div>  --}}
                            </div>
                            <div class="swiper-slide" data-hash="slide2">
-                              <div class="col-md-6">
-                                 <span class="img-ste1"></span>
-                              </div>
-                              <div class="col-md-6">
-                                 <h4 class="name-intro">DANA PENSIUN<br>SEMEN GRESIK</h4>
-                                 <span class="hr-intro"></span>
-                                 <p class="docopation-intro">
-                                    Jl. R.A. Kartini No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122
-                                 </p>
-                                 <a href="#" class="btn-drop"><span class="ic-sx22"></span> Подробнее</a>
+                              <div class="col-md-10">
+                                    <img class="img-ste1" width="100%" src="{{ url('webprof/img/post2.jpg')}}">
                               </div>
                            </div>
                            <div class="swiper-slide" data-hash="slide3">
-                              <div class="col-md-6">
-                                 <span class="img-ste1"></span>
-                              </div>
-                              <div class="col-md-6">
-                                 <h4 class="name-intro">DANA PENSIUN<br>SEMEN GRESIK</h4>
-                                 <span class="hr-intro"></span>
-                                 <p class="docopation-intro">
-                                    Jl. R.A. Kartini No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122
-                                 </p>
-                                 <a href="#" class="btn-drop"><span class="ic-sx22"></span> Подробнее</a>
+                              <div class="col-md-10">
+                                    <img class="img-ste1" width="100%" src="{{ url('webprof/img/post1.jpg')}}">
                               </div>
                            </div>
                         </div>
@@ -205,22 +203,19 @@
          <footer class="section site-footer bg-dark">
             <div class="container">
                <div class="row">
-                  <div class="col-lg-2 col-md-2">
-                     <img class="logo-img my-3" src="{{ url('webprof/img/logo.png')}}" alt="LOGO">
-                  </div>
-                  <div class="col-lg-6 col-md-6 text-center">
-                     <p class="footer-text">© ProjectNames 2018 - Все права только у меня.</p>
+                  <div class="col-lg-8 col-md-8">
+                       <p class="footer-text">
+                            <h5>Kantor Dana Pensun Semen Gresik</h5>
+                            Jalan RA. Kartini No. 23 Gresik, 61122<br>
+                            Telp. 031 3984492 Fax. 031 3981371
+                        </p>
                   </div>
                   <div class="col-md-4">
                      <ul class="ft-nav social-nav my-3">
-                        <li class="mx-1"><a href="javascript:void(0);" title="vk"><i class="fa fa-vk"></i></a></li>
                         <li class="mx-1"><a href="javascript:void(0);" title="twitter"><i class="fa fa-twitter"></i></a></li>
                         <li class="mx-1"><a href="javascript:void(0);" title="facebook"><i class="fa fa-facebook"></i></a></li>
                         <li class="mx-1"><a href="javascript:void(0);" title="instagram"><i class="fa fa-instagram"></i></a></li>
                      </ul>
-                     <a href="http://larts.pro/">
-                     <span class="corp-design"></span>
-                     </a>
                   </div>
                </div>
             </div>

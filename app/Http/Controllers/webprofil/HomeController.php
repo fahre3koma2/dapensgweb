@@ -52,30 +52,51 @@ class HomeController extends Controller
     public function about()
     {
         //
-        return view('webprofil.about');
+        $menu = 'about';
+        $data = [
+            'menu' => $menu,
+        ];
+
+        return view('webprofil.about', $data);
     }
 
     public function manajemen()
     {
         //
-        return view('webprofil.manajemen');
+        $menu = 'manajemen';
+        $data = [
+            'menu' => $menu,
+        ];
+        return view('webprofil.manajemen', $data);
     }
 
     public function penghargaan()
     {
         //
-        return view('webprofil.penghargaan');
+        $menu = 'penghargaan';
+        $data = [
+            'menu' => $menu,
+        ];
+        return view('webprofil.penghargaan', $data);
     }
 
     public function struktur()
     {
         //
-        return view('webprofil.struktur');
+        $menu = 'struktur';
+        $data = [
+            'menu' => $menu,
+        ];
+        return view('webprofil.struktur', $data);
     }
 
     public function kontak()
     {
         //
-        return view('webprofil.kontak');
+        $menu = 'kontak';
+        $data = [
+            'menu' => $menu,
+        ];
+        return view('webprofil.kontak', $data);
     }
 }

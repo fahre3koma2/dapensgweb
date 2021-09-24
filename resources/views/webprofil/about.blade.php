@@ -21,20 +21,23 @@
         <div class="row">
             <div class="col-lg-9 col-md-9">
                 <span class="name-rog"><div class="hr-line"></div> Tentang Kami</span>
-			<div class="promo-donate">
-			    <div class="col-md-1 dv lv">
-                <span class="ic-love"></span>
+                <div class="promo-donate">
+                    <div class="col-md-1 dv lv">
+                        <span class="ic-love"></span>
+                    </div>
+                    <div class="col-md-10 lv">
+                        <h3 class="th-name">Sejarah DPSG :</h3>
+                        <p class="desctop">
+                            Dana Pensiun ini merupakan kelanjutan dari Yayasan Dana Pensiun Karyawan PT Semen Gresik (Persero) yang dibentuk berdasarkan Akta Notaris Goesti Djohan Nomor 280 tanggal 27 Maret 1974 dengan nama Yayasan Dana Pensiun Karyawan PT Semen Gresik (Persero) yang telah mendapat persetujuan Menteri berdasarkan surat Nomor B 7774/DJM/111.5/12/1976 tanggal 18 Desember 1976, kemudian disesuaikan dengan Undang-undang Dana Pensiun dan peraturan pelaksanaannya, dengan nama Dana Pensiun Semen Gresik, dan telah disahkan berdasarkan Keputusan Menteri Keuangan Republik Indonesia Nomor: KEP – 003/KM.17/1999 tanggal 11 Januari 1999 dan terakhir disahkan berdasarkan Keputusan Dewan Komisioner Otoritas Jasa Keuangan Nomor: KEP – 2776/NB.1/2014  tanggal 20 Oktober 2014.
+                        <br><br>
+                        {{--  За пожертвование вы получаете монеты, за которые можно приобрести привилегии на наших серверах.</p>
+                        <a href="#" class="love-donate"><span class="ic-loveb"></span> Пожертвовать</a>  --}}
+                    </div>
                 </div>
-                <div class="col-md-10 lv">
-                <h3 class="th-name">Коротко о пожертвованиях:</h3>
-                <p class="desctop">
-                Как и все мы нуждаемся в материальной помощи. Нам необходимо арендовать оборудование для игровых серверов, совершенствовать старое и разрабатывать совершенно новое и необычное! Именно по этим причинам мы и ввели систему пожертвований на нашем проекте.
-                <br><br>
-                За пожертвование вы получаете монеты, за которые можно приобрести привилегии на наших серверах.</p>
-                <a href="#" class="love-donate"><span class="ic-loveb"></span> Пожертвовать</a>
+
+
             </div>
-        </div>
-    </div>
+
                <div class="col-lg-3 col-md-3">
                   <div class="right-block">
                      <div class="n-m">Мониторинг Серверов</div>

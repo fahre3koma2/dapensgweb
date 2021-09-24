@@ -1,22 +1,19 @@
-<footer class="section site-footer bg-dark">
+ <footer class="section site-footer bg-dark">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-md-2">
-                <img class="logo-img my-3" src="{{ url('webprof/img/logo.png')}}" alt="LOGO">
-            </div>
-            <div class="col-lg-6 col-md-6 text-center">
-                <p class="footer-text">© ProjectNames 2018 - Все права только у меня.</p>
+            <div class="col-lg-8 col-md-8">
+                <p class="footer-text">
+                    <h5>Kantor Dana Pensun Semen Gresik</h5>
+                    Jalan RA. Kartini No. 23 Gresik, 61122<br>
+                    Telp. 031 3984492 Fax. 031 3981371
+                </p>
             </div>
             <div class="col-md-4">
                 <ul class="ft-nav social-nav my-3">
-                <li class="mx-1"><a href="javascript:void(0);" title="vk"><i class="fa fa-vk"></i></a></li>
                 <li class="mx-1"><a href="javascript:void(0);" title="twitter"><i class="fa fa-twitter"></i></a></li>
                 <li class="mx-1"><a href="javascript:void(0);" title="facebook"><i class="fa fa-facebook"></i></a></li>
                 <li class="mx-1"><a href="javascript:void(0);" title="instagram"><i class="fa fa-instagram"></i></a></li>
                 </ul>
-                <a href="http://larts.pro/">
-                <span class="corp-design"></span>
-                </a>
             </div>
         </div>
     </div>
