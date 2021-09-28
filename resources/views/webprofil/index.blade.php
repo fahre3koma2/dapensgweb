@@ -196,6 +196,11 @@
                        <iframe width="238" height="238" target="_blank" src="https://www.youtube.com/embed/37bLs3iDVNI"></iframe>
                      </div>
                   </div>
+
+                  <div class="right-block">
+                       <img class="img-ste1" width="100%" src="{{ url('webprof/img/visi.png')}}">
+                     
+                  </div>
                </div>
             </div>
          </div>

@@ -20,7 +20,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                 <span class="name-rog">
+                 {{-- <span class="name-rog">
 				    <div class="hr-line"></div> Hukum Online
 				 </span>
 
@@ -53,11 +53,11 @@
                         Теперь Вам стоит определиться с тем, какой тематики сервер вам больше нравится. На сегодняшний день мы предлагаем Вам самые стабильные сборки серверов среди русскоязычного Minecraft сообщества на самых последних версиях доступных игровых модов.
                         </p>
                     </div>
-                </div>
+                </div> --}}
                 <br>
 
                 <span class="name-rog">
-				    <div class="hr-line"></div> List Data
+				    <div class="hr-line"></div> Hukum Online
 				</span>
                 <br>
                 <table id="example" class="display" style="width:100%">
