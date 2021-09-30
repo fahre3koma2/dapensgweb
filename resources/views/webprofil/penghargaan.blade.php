@@ -20,44 +20,25 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12">
-                 {{-- <span class="name-rog">
-				    <div class="hr-line"></div> Hukum Online
-				 </span>
-
-				 <div class="section-how">
-                    <span class="num-1"> 01 </span>
-                    <div class="reved">
-                        <div class="arrow-road"></div>
-                        <p>
-                        Для начала вам нужно зарегистрировать свой игровой аккаунт перейдя к регистрации.
-                        Запомните, что только Вы в силах защитить свой аккаунт от рук злоумышленников установив сложный пароль, например: <span style="color: #000;">xR3E8g1bHjLM</span>
-                        </p>
-                    </div>
-                </div>
-
-				<div class="section-how">
-                    <span class="num-2">02</span>
-                    <div class="reved">
-                        <div class="arrow-road"></div>
-                        <p>
-                        Перед непосредственным началом игры Вам в обязательном порядке необходимо ознакомиться с правилами игры на игровых серверах StreamCraft.net. Все эти правила призваны сделать игру максимально честной, комфортной и интересной.
-                        </p>
-                    </div>
-                </div>
-
-				<div class="section-how">
-				<span class="num-3">03</span>
-                    <div class="reved">
-                        <div class="arrow-road"></div>
-                        <p>
-                        Теперь Вам стоит определиться с тем, какой тематики сервер вам больше нравится. На сегодняшний день мы предлагаем Вам самые стабильные сборки серверов среди русскоязычного Minecraft сообщества на самых последних версиях доступных игровых модов.
-                        </p>
-                    </div>
-                </div> --}}
+                 <span class="name-rog">
+                     <div class="hr-line"></div>
+                     <h5>Indeks Berita</h5>
+                  </span>
+                  <div class="cd-faq-items">
+                     <ul id="basics" class="cd-faq-group">
+                        <br>
+                        @foreach($berkas->slice(0, 4) as $value)
+                        <li>
+                           <a class="cd-faq-trigger" href="#0">{{$value->perihal}}</a>
+                        </li>
+                        @endforeach
+                     </ul>
+                     <!-- cd-faq-group -->
+                  </div>
                 <br>
 
                 <span class="name-rog">
-				    <div class="hr-line"></div> <h4> Hukum Online </h4>
+				    <div class="hr-line"></div> <h5> Hukum Online </h5>
 				</span>
                 <br>
 

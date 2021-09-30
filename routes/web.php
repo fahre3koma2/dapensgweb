@@ -29,10 +29,7 @@ Route::get('/', function () {
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 
-Route::get('/dashboard', function () {
-        return view('webprofil.index');
-    })->name('dashboard');
-
+Route::get('/dashboard',[ProfilHomeController::class, 'home'])->name('dashboard');
 Route::get('/about', [ProfilHomeController::class, 'about'])->name('about');
 Route::get('/manajemen', [ProfilHomeController::class, 'manajemen'])->name('manajemen');
 Route::get('/penghargaan', [ProfilHomeController::class, 'penghargaan'])->name('penghargaan');

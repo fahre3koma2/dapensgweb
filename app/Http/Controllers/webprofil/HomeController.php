@@ -51,6 +51,20 @@ class HomeController extends Controller
         //
     }
 
+    public function home()
+    {
+        //
+        $viewrs = Berkas::sum('views');
+
+        $menu = 'about';
+        $data = [
+            'menu' => $menu,
+            'viewrs' => $viewrs,
+        ];
+
+        return view('webprofil.index', $data);
+    }
+
     public function about()
     {
         //

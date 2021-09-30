@@ -107,7 +107,7 @@
                   <div class="col-lg-3">
                      <a href="#" class="block-s1 p2">
                         <p class="how-to-games">Jumlah Pengunjung</p>
-                        <p class="desctops">    </p>
+                        <p class="how-to-games">Viewers : {{ $viewrs }}</p>
                      </a>
                      <a href="how-start.html" class="block-s1">
                         <p class="how-to-games">Как начать играть ?</p>

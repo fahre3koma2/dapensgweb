@@ -21,6 +21,12 @@ class HukumController extends Controller
     public function create()
     {
         //
+        $menu = 'hukum';
+        $data = [
+            'menu' => $menu,
+        ];
+
+        return view('hukum.create', $data);
     }
 
 
@@ -33,6 +39,7 @@ class HukumController extends Controller
     public function show($id)
     {
         //
+        Berkas::find($id)->increment('views');
     }
 
     public function edit($id)

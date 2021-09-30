@@ -71,6 +71,7 @@ class BerkasController extends Controller
             'file' => $nama_file,
             'kategori' => $kategori,
             'keterangan' => $request->keterangan,
+            'views' => 0,
             'create_by' => auth()->user()->name,
         ]);
 
