@@ -5,13 +5,16 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Models\Berkas;
+
 class HukumController extends Controller
 {
 
     public function index()
     {
         //
-        return view('hukum.index');
+        $data['berkas'] = Berkas::query()->where('kategori', 'hukumonline')->orderBy('created_at', 'ASC')->get();
+        return view('hukum.index', $data);
     }
 
 

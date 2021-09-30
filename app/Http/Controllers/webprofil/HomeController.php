@@ -5,6 +5,8 @@ namespace App\Http\Controllers\webprofil;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Models\Berkas;
+
 class HomeController extends Controller
 {
 
@@ -74,8 +76,11 @@ class HomeController extends Controller
     {
         //
         $menu = 'penghargaan';
+        $berkas = Berkas::query()->where('kategori', 'hukumonline')->orderBy('created_at', 'ASC')->get();
+
         $data = [
             'menu' => $menu,
+            'berkas' => $berkas,
         ];
         return view('webprofil.penghargaan', $data);
     }

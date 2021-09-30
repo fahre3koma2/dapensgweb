@@ -23,7 +23,7 @@
       <link href="https://cdn.datatables.net/1.11.2/css/jquery.dataTables.min.css" rel="stylesheet">
       <style>
         #example {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-collapse: collapse;
         width: 100%;
         }
@@ -33,7 +33,7 @@
         padding: 8px;
         }
 
-        #example tr:nth-child(even){background-color: #f2f2f2;}
+        #example tr:nth-child(even){background-color: #ffffff;}
 
         #example tr:hover {background-color: #ddd;}
 
@@ -41,8 +41,8 @@
         padding-top: 12px;
         padding-bottom: 12px;
         text-align: left;
-        background-color: #04AA6D;
-        color: white;
+        background-color: #EDFAFF;
+        color: black;
         }
       </style>
    </head>

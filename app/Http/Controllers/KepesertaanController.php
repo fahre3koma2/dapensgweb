@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class kepesertaanController extends Controller
+class KepesertaanController extends Controller
 {
 
     public function index()

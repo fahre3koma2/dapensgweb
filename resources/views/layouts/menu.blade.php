@@ -5,7 +5,7 @@
             <ul class="navigation-menu text-center">
 
                 <li class="has-submenu ">
-                    <a href="#"><i class="mdi mdi-airplay"></i>Home</a>
+                    <a href="{{url('/dashboard')}}"><i class="mdi mdi-airplay"></i>Home</a>
                 </li>
 
                 <li class="has-submenu ">

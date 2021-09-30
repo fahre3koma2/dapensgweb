@@ -31,37 +31,35 @@
             <div class="card-body">
                 <h4 class="mt-0 header-title">Tambah Data File</h4>
                 <div class="general-label">
-                    <form class="form-horizontal">
+                    <form class="form-horizontal" action="{{ route('berkas.store') }}" method="POST" enctype="multipart/form-data">
+                        @csrf
                         <div class="form-group row">
-                            <label for="example-text-input" class="col-sm-2 col-form-label">Judul</label>
+                            <label for="example-text-input" class="col-sm-2 col-form-label">No Dokumen</label>
                             <div class="col-sm-8">
-                                <input class="form-control" type="text" value="Judul" id="example-text-input">
+                                <input class="form-control" type="text" name="no_dok" id="example-text-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="example-text-input" class="col-sm-2 col-form-label">Perihal / Judul</label>
+                            <div class="col-sm-8">
+                                <input class="form-control" type="text" name="perihal" id="example-text-input" required>
                             </div>
                         </div>
                         <div class="form-group row">
                             <label for="example-text-input" class="col-sm-2 col-form-label">Deksripsi</label>
                             <div class="col-sm-8">
-                                <textarea required class="form-control" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="example-text-input" class="col-sm-2 col-form-label">Nama File</label>
-                            <div class="col-sm-8">
-                                <input class="form-control" type="text" value="Nama File" id="example-text-input">
+                                <textarea required class="form-control" name="keterangan" rows="3"></textarea>
                             </div>
                         </div>
 
                         <div class="form-group row">
                             <label class="col-sm-2 col-form-label">Jenis</label>
                             <div class="col-sm-4">
-                                <select class="custom-select">
+                                <select class="custom-select" name="kategori">
                                     <option selected>-Pilih-</option>
-                                    <option value="1">Akutansi & Keuangan</option>
-                                    <option value="2">Inventasi</option>
-                                    <option value="3">Kepesertaan</option>
-                                    <option value="1">Kearsipan</option>
-                                    <option value="2">Tata Kelola</option>
-                                    <option value="3">Hukum Online</option>
+                                    <option value="berita">Berita</option>
+                                    <option value="hukumonline">Hukum Online</option>
                                 </select>
                             </div>
                         </div>
@@ -70,11 +68,12 @@
                             <label class="col-md-2" for="example-input1-group2">File</label>
                             <div class="col-md-6">
                                 <h4 class="mt-0 header-title">File Upload 1</h4>
-                                <input type="file" id="input-file-now" />
+                                <input type="file" name="berkas" id="input-file-now" required />
+                                @if ($errors->has('berkas')) <span class="text-danger">{{ $errors->first('berkas') }}</span> @endif
                             </div>
-                            <div class="col-md-4">
+                            {{--  <div class="col-md-4">
                                 <button type="button" class="btn btn-outline-info waves-effect waves-light">Upload</button>
-                            </div>
+                            </div>  --}}
                         </div>
 
                         <div class="form-group mb-0 pull-right">

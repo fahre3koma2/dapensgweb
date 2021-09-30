@@ -57,187 +57,28 @@
                 <br>
 
                 <span class="name-rog">
-				    <div class="hr-line"></div> Hukum Online
+				    <div class="hr-line"></div> <h4> Hukum Online </h4>
 				</span>
                 <br>
+
                 <table id="example" class="display" style="width:100%">
                     <thead>
                         <tr>
-                            <th>Judul</th>
-                            <th>Deskripsi</th>
-                            <th>Nomor Regulasi</th>
-                            <th>Sektor</th>
+                            <th width="20%">No Dokumen</th>
+                            <th width="25%">Perihal</th>
+                            <th width="40%">Keterangan</th>
+                            <th width="15%">File</th>
                         </tr>
                     </thead>
                     <tbody>
+                        @foreach($berkas as $value)
                         <tr>
-                            <td>Andi</td>
-                            <td>Jakarta Selatan</td>
-                            <td>Web Designer</td>
-                            <td>21</td>
+                            <td>{{$value->no_dokumen}}</td>
+                            <td>{{$value->perihal}}</td>
+                            <td>{{$value->keterangan}}</td>
+                            <td><a href="{{ url('public/berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a></td>
                         </tr>
-                        <tr>
-                            <td>Budi</td>
-                            <td>Bandung</td>
-                            <td>Web Developer</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>Cahyo</td>
-                            <td>Bekasi</td>
-                            <td>Web Programmer</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>Darma</td>
-                            <td>Bali</td>
-                            <td>Teknisi</td>
-                            <td>35</td>
-                        </tr>
-                          <tr>
-                            <td>Andi</td>
-                            <td>Jakarta Selatan</td>
-                            <td>Web Designer</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Budi</td>
-                            <td>Bandung</td>
-                            <td>Web Developer</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>Cahyo</td>
-                            <td>Bekasi</td>
-                            <td>Web Programmer</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>Darma</td>
-                            <td>Bali</td>
-                            <td>Teknisi</td>
-                            <td>35</td>
-                        </tr>
-                          <tr>
-                            <td>Andi</td>
-                            <td>Jakarta Selatan</td>
-                            <td>Web Designer</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Budi</td>
-                            <td>Bandung</td>
-                            <td>Web Developer</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>Cahyo</td>
-                            <td>Bekasi</td>
-                            <td>Web Programmer</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>Darma</td>
-                            <td>Bali</td>
-                            <td>Teknisi</td>
-                            <td>35</td>
-                        </tr>
-                          <tr>
-                            <td>Andi</td>
-                            <td>Jakarta Selatan</td>
-                            <td>Web Designer</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Budi</td>
-                            <td>Bandung</td>
-                            <td>Web Developer</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>Cahyo</td>
-                            <td>Bekasi</td>
-                            <td>Web Programmer</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>Darma</td>
-                            <td>Bali</td>
-                            <td>Teknisi</td>
-                            <td>35</td>
-                        </tr>
-                          <tr>
-                            <td>Andi</td>
-                            <td>Jakarta Selatan</td>
-                            <td>Web Designer</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Budi</td>
-                            <td>Bandung</td>
-                            <td>Web Developer</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>Cahyo</td>
-                            <td>Bekasi</td>
-                            <td>Web Programmer</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>Darma</td>
-                            <td>Bali</td>
-                            <td>Teknisi</td>
-                            <td>35</td>
-                        </tr>
-                          <tr>
-                            <td>Andi</td>
-                            <td>Jakarta Selatan</td>
-                            <td>Web Designer</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Budi</td>
-                            <td>Bandung</td>
-                            <td>Web Developer</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>Cahyo</td>
-                            <td>Bekasi</td>
-                            <td>Web Programmer</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>Darma</td>
-                            <td>Bali</td>
-                            <td>Teknisi</td>
-                            <td>35</td>
-                        </tr>
-                          <tr>
-                            <td>Andi</td>
-                            <td>Jakarta Selatan</td>
-                            <td>Web Designer</td>
-                            <td>21</td>
-                        </tr>
-                        <tr>
-                            <td>Budi</td>
-                            <td>Bandung</td>
-                            <td>Web Developer</td>
-                            <td>26</td>
-                        </tr>
-                        <tr>
-                            <td>Cahyo</td>
-                            <td>Bekasi</td>
-                            <td>Web Programmer</td>
-                            <td>29</td>
-                        </tr>
-                        <tr>
-                            <td>Darma</td>
-                            <td>Bali</td>
-                            <td>Teknisi</td>
-                            <td>35</td>
-                        </tr>
+                       @endforeach
                     </tbody>
                 </table>
                 <br><br><br>

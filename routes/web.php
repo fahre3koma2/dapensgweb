@@ -10,6 +10,7 @@ use App\Http\Controllers\KearsipanController;
 use App\Http\Controllers\KepesertaanController;
 use App\Http\Controllers\HukumController;
 use App\Http\Controllers\InventasiController;
+use App\Http\Controllers\BerkasController;
 
 /*
 |--------------------------------------------------------------------------
@@ -46,4 +47,7 @@ Route::get('/kontak', [ProfilHomeController::class, 'kontak'])->name('kontak');
     Route::resource('/kearsipan', KearsipanController::class);
     Route::resource('/tatakelola', TataKelolaController::class);
     Route::resource('/hukum', HukumController::class);
+
+    Route::resource('/berkas', BerkasController::class);
+
 });
