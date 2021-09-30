@@ -11,7 +11,7 @@
  Target Server Version : 100413
  File Encoding         : 65001
 
- Date: 30/09/2021 16:23:03
+ Date: 01/10/2021 05:31:34
 */
 
 SET NAMES utf8mb4;
@@ -33,14 +33,17 @@ CREATE TABLE `berkas`  (
   `updated_at` timestamp(0) NULL DEFAULT NULL,
   `create_by` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `update_by` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
+  `views` int(11) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 4 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of berkas
 -- ----------------------------
-INSERT INTO `berkas` VALUES (1, NULL, 'asd', 'asd', '1632980727_asd', NULL, NULL, '2021-09-30 12:45:27', '2021-09-30 12:45:27', NULL, NULL);
-INSERT INTO `berkas` VALUES (2, '2312320/2312cHPPP', 'sadqw', 'wqeq', '1632981900_sadqw.pdf', 'berita', NULL, '2021-09-30 13:05:00', '2021-09-30 13:05:00', NULL, NULL);
+INSERT INTO `berkas` VALUES (1, NULL, 'asd', 'asd', '1632980727_asd', NULL, NULL, '2021-09-30 12:45:27', '2021-09-30 12:45:27', NULL, NULL, 7);
+INSERT INTO `berkas` VALUES (2, '2312320/2312cHPPP', 'sadqw', 'wqeq', '1632981900_sadqw.pdf', 'berita', NULL, '2021-09-30 13:05:00', '2021-09-30 13:05:00', NULL, NULL, 5);
+INSERT INTO `berkas` VALUES (4, '2312320/2312cHPPP', 'Lakukan Ini Jika Penyewa Menunggak dan Enggan Pindah Rumah', 'Pada dasarnya, suatu perjanjian tidak boleh dibuat atas suatu paksaan dan isi perjanjian tersebut tidak boleh bertentangan dengan undang-undang, kesusilaan, dan ketertiban umum.\r\n\r\nDalam hal perjanjian ditandatangani atas dasar paksaan, maka unsur sepakat tidak terpenuhi. Konsekuensinya, perjanjian tersebut menjadi batal sebagaimana disebut dalam Pasal 1323 Kitab Undang-Undang Hukum Perdata. Namun, adanya paksaan tersebut harus dapat dibuktikan.', '1632996713_Lakukan Ini Jika Penyewa Menunggak dan Enggan Pindah Rumah.pdf', 'hukumonline', NULL, '2021-09-30 17:11:53', '2021-09-30 21:48:39', 'Misha Primaresty', NULL, 1);
+INSERT INTO `berkas` VALUES (5, '20/POJK.04/2021', 'Peraturan OJK Tentang Perubahan Kedua Atas Peraturan OJK Nomor 11-POJK.03-2020', 'POJK tentang Perubahan Kedua Atas POJK Tentang Stimulus Perekonomian Nasional Sebagai Kebijakan Countercyclical Dampak Penyebaran Coronavirus Disease 2019.', '1633040746_Peraturan OJK Tentang Perubahan Kedua Atas Peraturan OJK Nomor 11-POJK.03-2020.pdf', 'hukumonline', NULL, '2021-10-01 05:25:46', '2021-10-01 05:25:46', 'Admin', NULL, NULL);
 
 -- ----------------------------
 -- Table structure for biodata
@@ -103,7 +106,7 @@ CREATE TABLE `migrations`  (
   `migration` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 8 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 9 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_unicode_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of migrations
@@ -115,6 +118,7 @@ INSERT INTO `migrations` VALUES (4, '2021_05_07_081928_create_permission_tables'
 INSERT INTO `migrations` VALUES (5, '2014_10_12_200000_add_two_factor_columns_to_users_table', 2);
 INSERT INTO `migrations` VALUES (6, '2019_12_14_000001_create_personal_access_tokens_table', 2);
 INSERT INTO `migrations` VALUES (7, '2021_05_08_004737_create_sessions_table', 2);
+INSERT INTO `migrations` VALUES (8, '2021_09_30_213621_add_votes_to_berkas', 3);
 
 -- ----------------------------
 -- Table structure for model_has_permissions
@@ -256,9 +260,7 @@ CREATE TABLE `sessions`  (
 -- ----------------------------
 -- Records of sessions
 -- ----------------------------
-INSERT INTO `sessions` VALUES ('TN8G2U9HJ9IEAXp1qnlM7rR8GNxtehsF3jLviLBW', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiQnZMcWh1dGZKaEI4akhweVFTYWV3cVBJOWd3b3lJYWtjcmxkUGhVSSI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjI3OiJodHRwOi8vZGFwZW5zZ3dlYi5mYXIvaHVrdW0iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkMTViakguLjdrQUJYdG1MT0ZvYkxndWpPcHl1ZUhaenVNSmlvTVlIekFlU3hqMnlZaGluTi4iO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJDE1YmpILi43a0FCWHRtTE9Gb2JMZ3VqT3B5dWVIWnp1TUppb01ZSHpBZVN4ajJ5WWhpbk4uIjt9', 1632992132);
-INSERT INTO `sessions` VALUES ('UwpwWm9Eqcg6Z4lGWfPMFL44KrkYRDeuAdEgR0og', 17, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiRU1XZG05MzlKa1NDaEdWSnJlVHBDS0JNWDhTdXJ6QjRCeXNjUkROeiI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMxOiJodHRwOi8vZGFwZW5zZ3dlYi5mYXIvZGFzaGJvYXJkIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTc7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCQxNWJqSC4uN2tBQlh0bUxPRm9iTGd1ak9weXVlSFp6dU1KaW9NWUh6QWVTeGoyeVloaW5OLiI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkMTViakguLjdrQUJYdG1MT0ZvYkxndWpPcHl1ZUhaenVNSmlvTVlIekFlU3hqMnlZaGluTi4iO30=', 1632852831);
-INSERT INTO `sessions` VALUES ('wfZ9lRHqv51TyxZj1QGjmWv6xuQUZfS5RHzk3dvR', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiRU5ZdHBuRmRib2diQWZQRm0zbnpWcDc3WU9PSlp3a1hmUHRoSjdVWCI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMxOiJodHRwOi8vZGFwZW5zZ3dlYi5mYXIvZGFzaGJvYXJkIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEwJDE1YmpILi43a0FCWHRtTE9Gb2JMZ3VqT3B5dWVIWnp1TUppb01ZSHpBZVN4ajJ5WWhpbk4uIjtzOjIxOiJwYXNzd29yZF9oYXNoX3NhbmN0dW0iO3M6NjA6IiQyeSQxMCQxNWJqSC4uN2tBQlh0bUxPRm9iTGd1ak9weXVlSFp6dU1KaW9NWUh6QWVTeGoyeVloaW5OLiI7fQ==', 1632853691);
+INSERT INTO `sessions` VALUES ('2xJkScWMuwxGHgp131UnfOE6YlhFqhAAapJmUqPH', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTo4OntzOjY6Il90b2tlbiI7czo0MDoiQ21oVURjVW95cjhqaXpwVUFFSE52R0NWQUplT1dhS1ZZY3Y0UW8yeiI7czozOiJ1cmwiO2E6MDp7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjMzOiJodHRwOi8vZGFwZW5zZ3dlYi5mYXIvcGVuZ2hhcmdhYW4iO31zOjY6Il9mbGFzaCI7YToyOntzOjM6Im9sZCI7YTowOnt9czozOiJuZXciO2E6MDp7fX1zOjUwOiJsb2dpbl93ZWJfNTliYTM2YWRkYzJiMmY5NDAxNTgwZjAxNGM3ZjU4ZWE0ZTMwOTg5ZCI7aToxO3M6MTc6InBhc3N3b3JkX2hhc2hfd2ViIjtzOjYwOiIkMnkkMTAkMTViakguLjdrQUJYdG1MT0ZvYkxndWpPcHl1ZUhaenVNSmlvTVlIekFlU3hqMnlZaGluTi4iO3M6MjE6InBhc3N3b3JkX2hhc2hfc2FuY3R1bSI7czo2MDoiJDJ5JDEwJDE1YmpILi43a0FCWHRtTE9Gb2JMZ3VqT3B5dWVIWnp1TUppb01ZSHpBZVN4ajJ5WWhpbk4uIjtzOjU6ImFsZXJ0IjthOjA6e319', 1633040961);
 
 -- ----------------------------
 -- Table structure for users
