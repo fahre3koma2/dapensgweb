@@ -19,6 +19,15 @@
 @section('contents')
     <div class="container">
         <div class="row">
+            <div class="col-lg-4 col-md-4">
+                 <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Для Windows</a>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                 <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Для Windows</a>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                 <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Для Windows</a>
+            </div>
             <div class="col-lg-12 col-md-12">
                  <span class="name-rog">
                      <div class="hr-line"></div>
@@ -57,7 +66,7 @@
                             <td>{{$value->no_dokumen}}</td>
                             <td>{{$value->perihal}}</td>
                             <td>{{$value->keterangan}}</td>
-                            <td><a href="{{ url('public/berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a></td>
+                            <td><a href="{{ url('berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a></td>
                         </tr>
                        @endforeach
                     </tbody>

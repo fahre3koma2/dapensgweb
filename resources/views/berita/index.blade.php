@@ -11,10 +11,10 @@
             <div class="btn-group pull-right">
                 <ol class="breadcrumb hide-phone p-0 m-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item active">Hukum Online</li>
+                    <li class="breadcrumb-item active">Berita</li>
                 </ol>
             </div>
-            <h4 class="page-title">Hukum Online</h4>
+            <h4 class="page-title">List Berita</h4>
         </div>
     </div>
 </div>
@@ -30,16 +30,15 @@
 <div class="col-lg-12 col-sm-12">
     <div class="card">
         <div class="card-body table-responsive">
-            <a href="{{ url('/hukum/create') }}" class="btn btn-primary float-right"><i class="fa fa-plus"></i> Tambah File</a>
-            <h5 class="header-title">Data Hukum Online</h5>
+            <a href="{{ url('/berita/create') }}" class="btn btn-primary float-right"><i class="fa fa-plus"></i> Tambah File</a>
+            <h5 class="header-title">Data Berita</h5>
             <div class="">
                 <table id="datatable2" class="table">
                     <thead>
                     <tr>
-                        <th>No Dokumen</th>
-                        <th>Perihal</th>
-                        <th>Keterangan</th>
-                        <th>File</th>
+                        <th>Gambar</th>
+                        <th>Judul</th>
+                        <th>Isi/ Content Berita</th>
                         <th>Aksi</th>
                     </tr>
                     </thead>
@@ -47,10 +46,9 @@
                     <tbody>
                     @foreach($berkas as $value)
                     <tr>
-                        <td>{{$value->no_dokumen}}</td>
+                        <td><img src="{{ url('berkasnya/berita/'.$value->file) }}" height="100px" width="100px"></td>
                         <td>{{$value->perihal}}</td>
-                        <td>{{$value->keterangan}}</td>
-                        <td><a href="{{ url('berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a></td>
+                        <td>{!!$value->keterangan!!}</td>
                         <td>
                             <button type="button" class="btn btn-sm btn-danger delete" data-id="{{ $value->id }}" data-file="{{$value->id}}"><i class="fa fa-trash"></i> Hapus</button>
                                 {{ Form::open(['url'=>route('berkas.destroy', [Crypt::encrypt($value->id)]), 'method'=>'delete', 'id' => $value->id, 'style' => 'display: none;']) }}

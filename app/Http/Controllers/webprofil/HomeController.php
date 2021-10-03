@@ -55,11 +55,13 @@ class HomeController extends Controller
     {
         //
         $viewrs = Berkas::sum('views');
+        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->get();
 
-        $menu = 'about';
+        $menu = 'home';
         $data = [
             'menu' => $menu,
             'viewrs' => $viewrs,
+            'berita' => $berita,
         ];
 
         return view('webprofil.index', $data);

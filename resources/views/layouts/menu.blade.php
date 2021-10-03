@@ -8,23 +8,11 @@
                     <a href="{{url('/dashboard')}}"><i class="mdi mdi-airplay"></i>Home</a>
                 </li>
 
-                <li class="has-submenu ">
-                    <a href="{{url('/akutansi')}}"><i class="mdi mdi-layers"></i>Akutansi & Keuangan</a>
-                </li>
-
                 <li class="has-submenu">
-                    <a href="{{url('/inventasi')}}"><i class="mdi mdi-poll-box"></i>Inventasi</a>
+                    <a href="{{url('/berita')}}"><i class="mdi mdi-poll-box"></i>Berita</a>
                     {{--  <ul class="submenu">
                         <li><a href="#">Menu 1</a></li>
                     </ul>  --}}
-                </li>
-
-                <li class="has-submenu">
-                    <a href="{{url('/kepesertaan')}}"><i class="mdi mdi-stackexchange"></i>Kepesertaan</a>
-                </li>
-
-                <li class="has-submenu">
-                    <a href="{{url('/tatakelola')}}"><i class="mdi mdi-google-pages"></i>Tata Kelola</a>
                 </li>
 
                  <li class="has-submenu">

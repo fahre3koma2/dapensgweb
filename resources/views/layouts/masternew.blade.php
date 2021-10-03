@@ -17,6 +17,8 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 
+
+
   <link href="{{ url('asset/plugins/sweetalert2/dist/sweetalert2.min.css') }}" rel="stylesheet">
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>

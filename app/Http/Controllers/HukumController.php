@@ -59,33 +59,4 @@ class HukumController extends Controller
         //
     }
 
-    public function about()
-    {
-        //
-        return view('webprofil.about');
-    }
-
-    public function manajemen()
-    {
-        //
-        return view('webprofil.manajemen');
-    }
-
-    public function penghargaan()
-    {
-        //
-        return view('webprofil.penghargaan');
-    }
-
-    public function struktur()
-    {
-        //
-        return view('webprofil.struktur');
-    }
-
-    public function kontak()
-    {
-        //
-        return view('webprofil.kontak');
-    }
 }

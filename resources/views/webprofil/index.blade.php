@@ -17,7 +17,7 @@
       <link rel="stylesheet" href="{{ url('webprof/icons/fontawesome-all.min.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/css/plugins.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/css/main.css')}}">
-      <link rel="stylesheet" href="{{ url('webprof/css/styles.css')}}">
+      <link rel="stylesheet" href="{{ url('webprof/css/styles7.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/dist/css/swiper.min.css')}}">
    </head>
    <body>
@@ -29,14 +29,14 @@
                <div class="row">
                   <div class="col-12">
                      <div class="nav-header d-flex justify-content-between align-items-center">
-                        <a href="{{url('/')}}" class="logo" title="LOGO">
+                        <a href="{{url('/dashboard')}}" class="logo" title="LOGO">
                         <img class="logo-img" src="{{ url('webprof/img/logo.png')}}" width="20%" alt="LOGO">
                         <img class="alt-logo-img" src="{{ url('webprof/img/logo-alt2.png')}}" alt="LOGO">
                         </a>
                      </div>
                      <div class="nav-wrap">
                         <ul id="nav" class="nav-wrap__list menu">
-                           <li class="current"><a href="{{url('/dasboard')}}" title="HOME">Home</a></li>
+                           <li class="current"><a href="{{url('/dashboard')}}" title="HOME">Home</a></li>
                            <li><a href="{{url('/about')}}" title="tentang">Tentang Kami</a></li>
                            <li><a href="{{url('/manajemen')}}" title="manajemen">Newsfeed</a></li>
                            <li><a href="{{url('/penghargaan')}}" title="penghargaan">Hukum Online</a></li>
@@ -105,13 +105,8 @@
                      </div>
                   </div>
                   <div class="col-lg-3">
-                     <a href="#" class="block-s1 p2">
-                        <p class="how-to-games">Jumlah Pengunjung</p>
-                        <p class="how-to-games">Viewers : {{ $viewrs }}</p>
-                     </a>
-                     <a href="how-start.html" class="block-s1">
-                        <p class="how-to-games">Как начать играть ?</p>
-                        <p class="desctops"> В данной теме рассказано как нчать игру на нашем проекте.</p>
+                     <a href="{{ url('webprof/img/core.jpg')}}" target="_blank" class="block-s1 p2">
+                        <img class="img-ste1" width="100%" src="{{ url('webprof/img/core.jpg')}}">
                      </a>
                   </div>
                </div>
@@ -121,18 +116,18 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-9 col-md-9">
+                @foreach($berita as $item)
                   <div class="news-link">
-                     <img class="poster" src="{{ url('webprof/img/post.png')}}" />
+                     <img class="poster" src="{{ url('berkasnya/berita/'.$item->file) }}" width="291px" />
                      <span class="hot-news">HOT</span>
-                     <h3 class="news-log">Berita / Artikel !</h3>
+                     <h3 class="news-log"> {{$item->perihal}}</h3>
                      <p class="description">
-                        Встречайте новая мини-игра PUBG теперь и на нашем сервере в майнкрафт !
-                        По традиции нашим первым шагом будет ознакомление с правилами и регистрация аккаунта.
-                        Будьте внимательны при чтении правил нашего проекта, незнание их не освобождает вас от...
+                        {!!$item->keterangan!!}
                      </p>
                      <a href="#" class="btn-view"><span class="ic-sx24"></span> Подробнее</a>
                      <span class="time-data">18.05.18 12:42</span>
                   </div>
+                @endforeach
                   <div class="news-link">
                      <img class="poster" src="{{ url('webprof/img/post.png')}}" />
                      <span class="new-news">NEW</span>
@@ -145,51 +140,21 @@
                      <a href="#" class="btn-view"><span class="ic-sx24"></span> Подробнее</a>
                      <span class="time-data">18.05.18 12:42</span>
                   </div>
-                  <div class="news-link">
-                     <img class="poster" src="{{ url('webprof/img/post.png')}}" />
-                      <h3 class="news-log">Berita / Artikel !</h3>
-                     <p class="description">
-                        Встречайте новая мини-игра PUBG теперь и на нашем сервере в майнкрафт !
-                        По традиции нашим первым шагом будет ознакомление с правилами и регистрация аккаунта.
-                        Будьте внимательны при чтении правил нашего проекта, незнание их не освобождает вас от...
-                     </p>
-                     <a href="#" class="btn-view"><span class="ic-sx24"></span> Подробнее</a>
-                     <span class="time-data">18.05.18 12:42</span>
-                  </div>
-                  <div class="news-link">
-                     <img class="poster" src="{{ url('webprof/img/post.png')}}" />
-                      <h3 class="news-log">Berita / Artikel !</h3>
-                     <p class="description">
-                        Встречайте новая мини-игра PUBG теперь и на нашем сервере в майнкрафт !
-                        По традиции нашим первым шагом будет ознакомление с правилами и регистрация аккаунта.
-                        Будьте внимательны при чтении правил нашего проекта, незнание их не освобождает вас от...
-                     </p>
-                     <a href="#" class="btn-view"><span class="ic-sx24"></span> Подробнее</a>
-                     <span class="time-data">18.05.18 12:42</span>
-                  </div>
+
                </div>
                <div class="col-lg-3 col-md-3">
                   <div class="right-block">
-                     <div class="n-m">Informasi Lain</div>
+                     <div class="n-m">Jumlah Pengunjung</div>
                      <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
+                        <div class="server_name"><a href="#">Hari ini :</a></div>
                      </div>
                      <div class="server online">
-                        <div class="second circle">
-                           <strong></strong>
-                        </div>
-                        <div class="server_name"><a href="#">01 Сервер</a></div>
-                        <div class="server_players">
-                           Онлайн: 50/100
-                        </div>
+                        <div class="server_name"><a href="#">Bulan ini :</a></div>
                      </div>
-                     <p class="tdx-strom"><span class="online-o"></span> Общий онлайн: 2173</p>
+                     <div class="server online">
+                        <div class="server_name"><a href="#">Unit :</a></div>
+                     </div>
+                     <p class="tdx-strom"><span class="online-o"></span> Jumlah : 2173</p>
                   </div>
                   <div class="right-block vk">
                      <div class="n-m">Video</div>
@@ -253,7 +218,6 @@
          });
       </script>
       <script src="{{ url('webprof/js/jquery.min.js')}}"></script>
-      <script src="{{ url('webprof/js/circle-progress.js')}}"></script>
       <script src="{{ url('webprof/js/examples.js')}}"></script>
       <script src="{{ url('webprof/js/vendor/modernizr-3.5.0.min.js')}}"></script>
       <script src="{{ url('webprof/js/vendor/jquery-3.2.1.min.js')}}"></script>
