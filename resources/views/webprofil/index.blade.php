@@ -17,7 +17,7 @@
       <link rel="stylesheet" href="{{ url('webprof/icons/fontawesome-all.min.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/css/plugins.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/css/main.css')}}">
-      <link rel="stylesheet" href="{{ url('webprof/css/styles7.css')}}">
+      <link rel="stylesheet" href="{{ url('webprof/css/styles.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/dist/css/swiper.min.css')}}">
    </head>
    <body>
@@ -38,8 +38,8 @@
                         <ul id="nav" class="nav-wrap__list menu">
                            <li class="current"><a href="{{url('/dashboard')}}" title="HOME">Home</a></li>
                            <li><a href="{{url('/about')}}" title="tentang">Tentang Kami</a></li>
-                           <li><a href="{{url('/manajemen')}}" title="manajemen">Newsfeed</a></li>
-                           <li><a href="{{url('/penghargaan')}}" title="penghargaan">Hukum Online</a></li>
+                           <li><a href="{{url('/manajemen')}}" title="newsfeed">Newsfeed</a></li>
+                           <li><a href="{{url('/penghargaan')}}" title="hukum online">Hukum Online</a></li>
                            <div class="dropdown">
                                 <span>
                                     <div class="drop-ed"></div>
@@ -118,17 +118,18 @@
                <div class="col-lg-9 col-md-9">
                 @foreach($berita as $item)
                   <div class="news-link">
-                     <img class="poster" src="{{ url('berkasnya/berita/'.$item->file) }}" width="291px" />
+                     <img class="poster" src="{{ url('berkasnya/berita/thumbnails/'.$item->file) }}" />
                      <span class="hot-news">HOT</span>
-                     <h3 class="news-log"> {{$item->perihal}}</h3>
+                     <h5 class="news-log"> {{$item->perihal}}</h5>
                      <p class="description">
-                        {!!$item->keterangan!!}
+                        @php  $berita = htmlspecialchars_decode(nl2br($item->keterangan)); $text = substr($berita,26); @endphp
+                        {{ \Illuminate\Support\Str::limit(strip_tags($item->keterangan),260,'...')}}
                      </p>
-                     <a href="#" class="btn-view"><span class="ic-sx24"></span> Подробнее</a>
-                     <span class="time-data">18.05.18 12:42</span>
+                     <a href="#" class="btn-view"><span class="ic-sx24"></span> Buka</a>
+                     <span class="time-data">{{date('d-m-Y H:i', strtotime($item->created_at));}}</span>
                   </div>
                 @endforeach
-                  <div class="news-link">
+                  {{--  <div class="news-link">
                      <img class="poster" src="{{ url('webprof/img/post.png')}}" />
                      <span class="new-news">NEW</span>
                      <h3 class="news-log">Berita / Artikel !</h3>
@@ -139,7 +140,7 @@
                      </p>
                      <a href="#" class="btn-view"><span class="ic-sx24"></span> Подробнее</a>
                      <span class="time-data">18.05.18 12:42</span>
-                  </div>
+                  </div>  --}}
 
                </div>
                <div class="col-lg-3 col-md-3">

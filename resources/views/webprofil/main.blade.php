@@ -57,7 +57,7 @@
                <div class="row">
                   <div class="col-12">
                      <div class="nav-header d-flex justify-content-between align-items-center">
-                       <a href="{{url('/')}}" class="logo" title="LOGO">
+                       <a href="{{url('/dashboard')}}" class="logo" title="LOGO">
                         <img class="logo-img" src="{{ url('webprof/img/logo.png')}}" width="20%" alt="LOGO">
                         <img class="alt-logo-img" src="{{ url('webprof/img/logo-alt.png')}}" alt="LOGO">
                         </a>

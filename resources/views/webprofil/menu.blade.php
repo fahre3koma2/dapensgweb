@@ -1,8 +1,8 @@
 <ul id="nav" class="nav-wrap__list menu">
     <li class="{{Request::is('dashboard') ? 'current' : ''}}" ><a href="{{url('/dashboard')}}" title="HOME">Home</a></li>
     <li class="{{Request::is('about') ? 'current' : ''}}" ><a href="{{url('/about')}}" title="tentang">Tentang Kami</a></li>
-    <li class="{{Request::is('manajemen') ? 'current' : ''}}" ><a href="{{url('/manajemen')}}" title="manajemen">Newsfeed</a></li>
-    <li class="{{Request::is('penghargaan') ? 'current' : ''}}" ><a href="{{url('/penghargaan')}}" title="penghargaan">Hukum Online</a></li>
+    <li class="{{Request::is('manajemen') ? 'current' : ''}}" ><a href="{{url('/manajemen')}}" title="newsfeed">Newsfeed</a></li>
+    <li class="{{Request::is('penghargaan') ? 'current' : ''}}" ><a href="{{url('/penghargaan')}}" title="hukumonline">Hukum Online</a></li>
         <div class="dropdown">
             <span>
                 <div class="drop-ed"></div>

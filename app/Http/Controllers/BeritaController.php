@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Image;
 
 use App\Models\Berkas;
 
@@ -59,16 +60,25 @@ class BeritaController extends Controller
         );
 
         // menyimpan data file yang diupload ke variabel $file
-        $file = $request->file('berkas');
+        $image = $request->file('berkas');
         $perihal = $request->perihal;
         $kategori = $request->kategori;
 
-        $nama_file = time() . "_" . $perihal . '.' . $file->getClientOriginalExtension();
+        $nama_file = time() . "_" . $perihal . '.' . $image->getClientOriginalExtension();
 
         // isi dengan nama folder tempat kemana file diupload
 
+        $filePath = public_path('berkasnya/berita/thumbnails');
+
+        $img = Image::make($image->path());
+        $img->resize(150, 150, function ($const) {
+            $const->aspectRatio();
+        })->save($filePath . '/' . $nama_file);
+
         $tujuan_upload = 'berkasnya/' . $kategori;
-        $file->move($tujuan_upload, $nama_file);
+        $image->move($tujuan_upload, $nama_file);
+
+        $header = htmlspecialchars_decode($request->keterangan);
 
         Berkas::create([
             'no_dokumen' => $request->no_dok,
@@ -76,6 +86,7 @@ class BeritaController extends Controller
             'file' => $nama_file,
             'kategori' => $kategori,
             'keterangan' => $request->keterangan,
+            'header' => $header,
             'views' => 0,
             'create_by' => auth()->user()->name,
         ]);

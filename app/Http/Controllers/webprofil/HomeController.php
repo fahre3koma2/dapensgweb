@@ -82,8 +82,13 @@ class HomeController extends Controller
     {
         //
         $menu = 'manajemen';
+        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->get();
+        $baru = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'desc')->first();
+
         $data = [
             'menu' => $menu,
+            'berita' => $berita,
+            'baru' => $baru,
         ];
         return view('webprofil.manajemen', $data);
     }

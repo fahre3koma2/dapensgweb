@@ -19,15 +19,19 @@
 @section('contents')
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4">
-                 <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Для Windows</a>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                 <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Для Windows</a>
-            </div>
-            <div class="col-lg-4 col-md-4">
-                 <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Для Windows</a>
-            </div>
+
+                <div class="col-lg-4 col-md-4">
+                 <center> <a href="#" class="btn-startgames lf"><span class="ic-dw"></span>SK Pengurus </a> </center>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                 <center> <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Instruksi Pengurus DPSG </a> </center>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                  <center> <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Perundang - undangan </a> </center>
+                </div>
+                <div class="col-lg-12 col-md-12">
+                    <br>
+                </div>
             <div class="col-lg-12 col-md-12">
                  <span class="name-rog">
                      <div class="hr-line"></div>
