@@ -53,7 +53,17 @@
                             </div>
                         </div>
                         <input class="form-control" type="hidden" name="kategori" value="hukumonline" id="example-text-input" >
-
+                        <div class="form-group row">
+                            <label class="col-sm-2 col-form-label">Kategori</label>
+                            <div class="col-sm-4">
+                                <select class="form-control" name="jenis" required>
+                                    <option>-Pilih Kategori-</option>
+                                    <option value="SK Pengurus">SK Pengurus</option>
+                                    <option value="Instruksi Pengurus DPSG">Instruksi Pengurus DPSG</option>
+                                    <option value="Perundang - undangan">Perundang - undangan</option>
+                                </select>
+                            </div>
+                        </div>
                         <div class="form-group row">
                             <label class="col-md-2" for="example-input1-group2">File</label>
                             <div class="col-md-6">

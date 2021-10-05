@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Image;
+use Str;
+use Crypt;
 
 use App\Models\Berkas;
 
@@ -55,7 +57,7 @@ class BeritaController extends Controller
             [
                 'berkas.required' => 'Tidak ada file yang di upload',
                 'berkas.mimes' => 'File harus gambar format png/jpg',
-                'berkas.max' => 'File tidak boleh lebih dari 10 mb',
+                'berkas.max' => 'File tidak boleh lebih dari 5 mb',
             ]
         );
 
@@ -63,8 +65,9 @@ class BeritaController extends Controller
         $image = $request->file('berkas');
         $perihal = $request->perihal;
         $kategori = $request->kategori;
+        $string = Str::random(12);
 
-        $nama_file = time() . "_" . $perihal . '.' . $image->getClientOriginalExtension();
+        $nama_file = time() . "_" . $kategori . "_" . $string . '.' . $image->getClientOriginalExtension();
 
         // isi dengan nama folder tempat kemana file diupload
 
@@ -78,15 +81,12 @@ class BeritaController extends Controller
         $tujuan_upload = 'berkasnya/' . $kategori;
         $image->move($tujuan_upload, $nama_file);
 
-        $header = htmlspecialchars_decode($request->keterangan);
-
         Berkas::create([
             'no_dokumen' => $request->no_dok,
             'perihal' => $perihal,
             'file' => $nama_file,
             'kategori' => $kategori,
             'keterangan' => $request->keterangan,
-            'header' => $header,
             'views' => 0,
             'create_by' => auth()->user()->name,
         ]);
@@ -108,6 +108,19 @@ class BeritaController extends Controller
     public function show($id)
     {
         //
+        $menu = 'manajemen';
+        $reqId = Crypt::decrypt($id);
+        $berita = Berkas::query()->where('id', $reqId)->get()->first();
+
+        $list = Berkas::where('kategori', 'berita')->inRandomOrder()->limit(3)->get();
+
+        $data = [
+            'menu' => $menu,
+            'berita' => $berita,
+            'list' => $list,
+        ];
+
+        return view('webprofil.beritadetail', $data);
     }
 
     /**

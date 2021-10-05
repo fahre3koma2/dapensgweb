@@ -38,6 +38,7 @@
                     <tr>
                         <th>No Dokumen</th>
                         <th>Perihal</th>
+                        <th>Kategori</th>
                         <th>Keterangan</th>
                         <th>File</th>
                         <th>Aksi</th>
@@ -49,6 +50,7 @@
                     <tr>
                         <td>{{$value->no_dokumen}}</td>
                         <td>{{$value->perihal}}</td>
+                        <td>{{$value->jenis}}</td>
                         <td>{{$value->keterangan}}</td>
                         <td><a href="{{ url('berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a></td>
                         <td>

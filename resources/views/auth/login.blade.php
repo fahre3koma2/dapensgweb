@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Daily UI - Day 1 Sign In</title>
+	<title>Login - Dana Pensiun Semen Gresik</title>
 
 	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700|Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
@@ -20,7 +20,7 @@
 		<div class="top">
 			<h1 id="title" class="hidden"><span id="logo">Dana Pensiun <span> Semen Gresik</span></span></h1>
 		</div>
-        <form method="POST" action="{{ route('login') }}">
+        <form method="POST" action="{{ route('user-login') }}">
             @csrf
             <div class="login-box animated fadeInUp">
                 <div class="box-header">

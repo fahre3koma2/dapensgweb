@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Berkas;
 use File;
-
+use Str;
 
 class BerkasController extends Controller
 {
@@ -57,8 +57,9 @@ class BerkasController extends Controller
         $file = $request->file('berkas');
         $perihal = $request->perihal;
         $kategori = $request->kategori;
+        $string = Str::random(12);
 
-        $nama_file = time() . "_" . $perihal . '.' . $file->getClientOriginalExtension();
+        $nama_file = time() . "_" . $kategori . "_" . $string . '.' . $file->getClientOriginalExtension();
 
         // isi dengan nama folder tempat kemana file diupload
 
@@ -71,6 +72,7 @@ class BerkasController extends Controller
             'file' => $nama_file,
             'kategori' => $kategori,
             'keterangan' => $request->keterangan,
+            'jenis' => $request->jenis,
             'views' => 0,
             'create_by' => auth()->user()->name,
         ]);
@@ -136,11 +138,16 @@ class BerkasController extends Controller
         //dd($kategori);
         File::delete('berkasnya/'. $berkasnya->kategori .'/'. $berkasnya->file);
 
+        if($kategori == 'berita'){
+            File::delete('berkasnya/' . $berkasnya->kategori . '/thumbnails/' . $berkasnya->file);
+        }
         // hapus data
         Berkas::where('id', decrypt($id))->delete();
 
         if ($kategori == 'hukumonline') {
             return redirect()->route('hukum.index');
+        } elseif ($kategori == 'berita') {
+            return redirect()->route('berita.index');
         } else {
             return redirect()->back();
         }

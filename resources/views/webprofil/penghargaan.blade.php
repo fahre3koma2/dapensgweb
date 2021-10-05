@@ -42,7 +42,7 @@
                         <br>
                         @foreach($berkas->slice(0, 4) as $value)
                         <li>
-                           <a class="cd-faq-trigger" href="#0">{{$value->perihal}}</a>
+                           <a href="{{ url('berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a>
                         </li>
                         @endforeach
                      </ul>
@@ -58,9 +58,10 @@
                 <table id="example" class="display" style="width:100%">
                     <thead>
                         <tr>
-                            <th width="20%">No Dokumen</th>
+                            <th width="10%">No Dokumen</th>
                             <th width="25%">Perihal</th>
-                            <th width="40%">Keterangan</th>
+                            <th width="15%">Jenis</th>
+                            <th width="35%">Keterangan</th>
                             <th width="15%">File</th>
                         </tr>
                     </thead>
@@ -69,6 +70,7 @@
                         <tr>
                             <td>{{$value->no_dokumen}}</td>
                             <td>{{$value->perihal}}</td>
+                            <td>{{$value->jenis}}</td>
                             <td>{{$value->keterangan}}</td>
                             <td><a href="{{ url('berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a></td>
                         </tr>

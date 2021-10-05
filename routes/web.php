@@ -12,6 +12,7 @@ use App\Http\Controllers\HukumController;
 use App\Http\Controllers\InventasiController;
 use App\Http\Controllers\BerkasController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\Auth\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,6 +28,8 @@ use App\Http\Controllers\BeritaController;
 Route::get('/', function () {
     return view('auth.login');
 });
+
+Route::post('/user-login', [LoginController::class, 'login'])->name('user-login');
 
 Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
 

@@ -116,16 +116,17 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-9 col-md-9">
+
                 @foreach($berita as $item)
                   <div class="news-link">
                      <img class="poster" src="{{ url('berkasnya/berita/thumbnails/'.$item->file) }}" />
-                     <span class="hot-news">HOT</span>
+                     {{-- <span class="hot-news">HOT</span> --}}
                      <h5 class="news-log"> {{$item->perihal}}</h5>
                      <p class="description">
                         @php  $berita = htmlspecialchars_decode(nl2br($item->keterangan)); $text = substr($berita,26); @endphp
                         {{ \Illuminate\Support\Str::limit(strip_tags($item->keterangan),260,'...')}}
                      </p>
-                     <a href="#" class="btn-view"><span class="ic-sx24"></span> Buka</a>
+                     <a href="{{ url('/berita/'.Crypt::encrypt($item->id)) }}" class="btn-view"><span class="ic-sx24"></span> Buka</a>
                      <span class="time-data">{{date('d-m-Y H:i', strtotime($item->created_at));}}</span>
                   </div>
                 @endforeach
@@ -147,10 +148,10 @@
                   <div class="right-block">
                      <div class="n-m">Jumlah Pengunjung</div>
                      <div class="server online">
-                        <div class="server_name"><a href="#">Hari ini :</a></div>
+                        <div class="server_name"><a href="#">Hari ini : {{$hariini}}</a></div>
                      </div>
                      <div class="server online">
-                        <div class="server_name"><a href="#">Bulan ini :</a></div>
+                        <div class="server_name"><a href="#">Bulan ini : {{$bulanini}}</a></div>
                      </div>
                      <div class="server online">
                         <div class="server_name"><a href="#">Unit :</a></div>

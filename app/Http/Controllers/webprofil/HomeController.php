@@ -4,8 +4,12 @@ namespace App\Http\Controllers\webprofil;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Auth;
+use Carbon\Carbon;
 
 use App\Models\Berkas;
+use App\Models\Unit;
+use App\Models\Visitor;
 
 class HomeController extends Controller
 {
@@ -54,14 +58,22 @@ class HomeController extends Controller
     public function home()
     {
         //
+
+        //dd(Auth::user()->nickname);
+
         $viewrs = Berkas::sum('views');
         $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->get();
+
+        $hariini = Visitor::whereDate('created_at', Carbon::today())->count();
+        $bulanini = Visitor::whereMonth('created_at', date('m'))->whereYear('created_at', date('Y'))->count();
 
         $menu = 'home';
         $data = [
             'menu' => $menu,
             'viewrs' => $viewrs,
             'berita' => $berita,
+            'hariini' => $hariini,
+            'bulanini' => $bulanini,
         ];
 
         return view('webprofil.index', $data);
