@@ -81,6 +81,17 @@
                     </div>
                 </div>
 
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Unit</label>
+                    <div class="col-sm-4">
+                        <select class="form-control" name="unit" required>
+                        @foreach ($unit as $id => $nama)
+                            <option value="{{$id}}">{{$nama}}</option>
+                        @endforeach
+                        </select>
+                    </div>
+                </div>
+
                 <div class="form-group mb-0">
                     <div>
                         <button type="submit" class="btn btn-primary waves-effect waves-light">Submit</button>

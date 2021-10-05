@@ -14,6 +14,8 @@ use Crypt;
 use Validator;
 use Carbon\Carbon;
 
+use App\Models\Unit;
+
 class UserController extends Controller
 {
     /**
@@ -41,9 +43,12 @@ class UserController extends Controller
         $menu = 'user';
         $edit = false;
 
+        $unit = Unit::where('nama', '!=', 'Administrator')->pluck('nama', 'id');
+
         $data = [
             'menu' => $menu,
-            'edit' => $edit
+            'edit' => $edit,
+            'unit' => $unit,
         ];
 
         return view('user.create', $data);
@@ -127,6 +132,7 @@ class UserController extends Controller
     {
         //
         $edit = true;
+        $unit = Unit::where('nama', '!=', 'Administrator')->pluck('nama', 'id');
 
         try {
             $menu = 'User';
@@ -136,6 +142,7 @@ class UserController extends Controller
                     'menu' => $menu,
                     'edit' => $edit,
                     'user' => $user,
+                    'unit' => $unit,
                 ];
 
             return view('user.create', $data);

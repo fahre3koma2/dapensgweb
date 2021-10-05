@@ -11,7 +11,7 @@
  Target Server Version : 100413
  File Encoding         : 65001
 
- Date: 05/10/2021 07:01:55
+ Date: 05/10/2021 15:59:08
 */
 
 SET NAMES utf8mb4;
@@ -69,19 +69,19 @@ CREATE TABLE `biodata`  (
 -- ----------------------------
 -- Records of biodata
 -- ----------------------------
-INSERT INTO `biodata` VALUES (1, 1, 'Admin', '12381293', 'Administrator', 'Administrator', 'Jl. Ikan', NULL, NULL, NULL, NULL);
-INSERT INTO `biodata` VALUES (3, 3, 'Fajarwati Dwi Ratnaningtias', '081', 'Kabag. Investasi', '1', NULL, '2021-07-02 14:46:41', '2021-07-02 14:46:41', NULL, '6587009');
-INSERT INTO `biodata` VALUES (4, 4, 'Achmad Sobirin', '081', 'Kabag. Kepesertaan', '3', NULL, '2021-07-02 14:48:59', '2021-07-02 14:48:59', NULL, '6687011');
-INSERT INTO `biodata` VALUES (5, 5, 'Isrohman', '081', 'Kasi. Verifikasi', '2', NULL, '2021-07-02 14:50:19', '2021-07-02 14:50:19', NULL, '6688015');
-INSERT INTO `biodata` VALUES (6, 6, 'Amir Yusuf', '081', 'Kasi. Keuangan', '2', NULL, '2021-07-02 14:51:11', '2021-07-02 14:51:11', NULL, '6788014');
-INSERT INTO `biodata` VALUES (7, 7, 'Agus Suhelmi', '081', 'Kasi. Umum', '3', NULL, '2021-07-02 14:56:23', '2021-07-02 14:56:23', NULL, '6889022');
-INSERT INTO `biodata` VALUES (8, 8, 'Andreas Otong Jaya', '081', 'Kasi. Sumber Daya Manusia', '3', NULL, '2021-07-02 14:57:02', '2021-07-02 14:57:02', NULL, '6810023');
-INSERT INTO `biodata` VALUES (9, 9, 'Endang Sri Hartati W.', '081', 'Kabag. Akuntansi & Keuangan', '2', NULL, '2021-07-02 14:57:42', '2021-07-02 14:57:42', NULL, '7513026');
-INSERT INTO `biodata` VALUES (10, 12, 'Ahmad Jeffry Zahidi', '081', 'Kasi. Investasi', '1', NULL, '2021-07-02 14:59:26', '2021-07-02 14:59:26', NULL, '8712025');
-INSERT INTO `biodata` VALUES (11, 14, 'Nur Indah Kurnia Sari', '081', 'Staf Investasi', '1', NULL, '2021-07-02 15:00:23', '2021-07-02 15:00:23', NULL, '9319302');
-INSERT INTO `biodata` VALUES (12, 15, 'Adelia Kumara Alvionita', '081', 'Kasi. Akuntansi & Pelaporan', '2', NULL, '2021-07-02 15:00:54', '2021-07-02 15:00:54', NULL, '9417301');
-INSERT INTO `biodata` VALUES (13, 16, 'Ellen Triana M.', '081', 'Staf Kepesertaan', '3', NULL, '2021-07-02 15:01:51', '2021-07-02 15:01:51', NULL, 'CP20121');
-INSERT INTO `biodata` VALUES (14, 17, 'Misha Primaresty', '081', 'Staf Kepesertaan', '3', NULL, '2021-07-02 15:02:31', '2021-07-02 15:02:31', NULL, 'CP90172');
+INSERT INTO `biodata` VALUES (1, 1, 'Admin', '12381293', 'Administrator', '1', 'Jl. Ikan', NULL, NULL, NULL, NULL);
+INSERT INTO `biodata` VALUES (3, 3, 'Fajarwati Dwi Ratnaningtias', '081', 'Kabag. Investasi', '2', NULL, '2021-07-02 14:46:41', '2021-07-02 14:46:41', NULL, '6587009');
+INSERT INTO `biodata` VALUES (4, 4, 'Achmad Sobirin', '081', 'Kabag. Kepesertaan', '4', NULL, '2021-07-02 14:48:59', '2021-07-02 14:48:59', NULL, '6687011');
+INSERT INTO `biodata` VALUES (5, 5, 'Isrohman', '081', 'Kasi. Verifikasi', '3', NULL, '2021-07-02 14:50:19', '2021-07-02 14:50:19', NULL, '6688015');
+INSERT INTO `biodata` VALUES (6, 6, 'Amir Yusuf', '081', 'Kasi. Keuangan', '3', NULL, '2021-07-02 14:51:11', '2021-07-02 14:51:11', NULL, '6788014');
+INSERT INTO `biodata` VALUES (7, 7, 'Agus Suhelmi', '081', 'Kasi. Umum', '4', NULL, '2021-07-02 14:56:23', '2021-07-02 14:56:23', NULL, '6889022');
+INSERT INTO `biodata` VALUES (8, 8, 'Andreas Otong Jaya', '081', 'Kasi. Sumber Daya Manusia', '4', NULL, '2021-07-02 14:57:02', '2021-07-02 14:57:02', NULL, '6810023');
+INSERT INTO `biodata` VALUES (9, 9, 'Endang Sri Hartati W.', '081', 'Kabag. Akuntansi & Keuangan', '3', NULL, '2021-07-02 14:57:42', '2021-07-02 14:57:42', NULL, '7513026');
+INSERT INTO `biodata` VALUES (10, 12, 'Ahmad Jeffry Zahidi', '081', 'Kasi. Investasi', '2', NULL, '2021-07-02 14:59:26', '2021-07-02 14:59:26', NULL, '8712025');
+INSERT INTO `biodata` VALUES (11, 14, 'Nur Indah Kurnia Sari', '081', 'Staf Investasi', '2', NULL, '2021-07-02 15:00:23', '2021-07-02 15:00:23', NULL, '9319302');
+INSERT INTO `biodata` VALUES (12, 15, 'Adelia Kumara Alvionita', '081', 'Kasi. Akuntansi & Pelaporan', '3', NULL, '2021-07-02 15:00:54', '2021-07-02 15:00:54', NULL, '9417301');
+INSERT INTO `biodata` VALUES (13, 16, 'Ellen Triana M.', '081', 'Staf Kepesertaan', '4', NULL, '2021-07-02 15:01:51', '2021-07-02 15:01:51', NULL, 'CP20121');
+INSERT INTO `biodata` VALUES (14, 17, 'Misha Primaresty', '081', 'Staf Kepesertaan', '4', NULL, '2021-07-02 15:02:31', '2021-07-02 15:02:31', NULL, 'CP90172');
 
 -- ----------------------------
 -- Table structure for failed_jobs
@@ -262,9 +262,8 @@ CREATE TABLE `sessions`  (
 -- ----------------------------
 -- Records of sessions
 -- ----------------------------
-INSERT INTO `sessions` VALUES ('ihz6CNMx0dQeG5SnHL8WwNH8OOYwhkNO8FTFirQz', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTo4OntzOjY6Il90b2tlbiI7czo0MDoic2JRcE1BejlKUDhNcER3bVpheXRzcUxVdGl1cElLd01qZUdKM2lPQiI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czozMToiaHR0cDovL2RhcGVuc2d3ZWIuZmFyL2Rhc2hib2FyZCI7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjQwOiJodHRwOi8vZGFwZW5zZ3dlYi5mYXIvYmVyaXRhL2Zhdmljb24ucG5nIjt9czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo1MDoibG9naW5fd2ViXzU5YmEzNmFkZGMyYjJmOTQwMTU4MGYwMTRjN2Y1OGVhNGUzMDk4OWQiO2k6MTtzOjE3OiJwYXNzd29yZF9oYXNoX3dlYiI7czo2MDoiJDJ5JDEwJDE1YmpILi43a0FCWHRtTE9Gb2JMZ3VqT3B5dWVIWnp1TUppb01ZSHpBZVN4ajJ5WWhpbk4uIjtzOjIxOiJwYXNzd29yZF9oYXNoX3NhbmN0dW0iO3M6NjA6IiQyeSQxMCQxNWJqSC4uN2tBQlh0bUxPRm9iTGd1ak9weXVlSFp6dU1KaW9NWUh6QWVTeGoyeVloaW5OLiI7czo1OiJhbGVydCI7YTowOnt9fQ==', 1633392063);
-INSERT INTO `sessions` VALUES ('KJukot5vPOlhtfFoGXyN9qa5r380aYnJKrI12MRO', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiY1pMVnNHRzZUd05EU1pYckVTWHlnNkRnaVpvalVCeURrS0hsbG0wQyI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6Mjc6Imh0dHA6Ly9kYXBlbnNnd2ViLmZhci9sb2dpbiI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1633391617);
-INSERT INTO `sessions` VALUES ('VDAzVQu91EkHDB4L1W9ZgxLGUAjz344wUcUN7qv0', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiekNyZldadDhGeFNIU05yMXZWeFVWaGR5TXI0R1B4WUIyNUVlMWZ0dyI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czo0NToiaHR0cDovL2RhcGVuc2d3ZWIuZmFyL2Jlcml0YS9zaXRlLndlYm1hbmlmZXN0Ijt9czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NDU6Imh0dHA6Ly9kYXBlbnNnd2ViLmZhci9iZXJpdGEvc2l0ZS53ZWJtYW5pZmVzdCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fX0=', 1633391616);
+INSERT INTO `sessions` VALUES ('kXZMtCkB7M63N3Oiq6KsFhU1CXdezGewZe3obwMh', NULL, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTozOntzOjY6Il90b2tlbiI7czo0MDoiM2hYRHdNdFl1aE00YmFST0RtbUUwZE1ZeHoyTW1lcTBiWHpCTnM2TiI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9kYXBlbnNnd2ViLmZhciI7fX0=', 1633424300);
+INSERT INTO `sessions` VALUES ('WWE3SffniYWiKymeCBk2VRgEonesvBvIYHuVUKLk', 1, '127.0.0.1', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.61 Safari/537.36', 'YTo3OntzOjY6Il90b2tlbiI7czo0MDoiaWdZV0swRWNtek9TOWwwQWFVNjY3WnhycjA4VnFvUU8yNGczRmhpaSI7czozOiJ1cmwiO2E6MTp7czo4OiJpbnRlbmRlZCI7czozMToiaHR0cDovL2RhcGVuc2d3ZWIuZmFyL2Rhc2hib2FyZCI7fXM6OToiX3ByZXZpb3VzIjthOjE6e3M6MzoidXJsIjtzOjIyMDoiaHR0cDovL2RhcGVuc2d3ZWIuZmFyL3VzZXIvZXlKcGRpSTZJbE5MT0ZaRlJGaENkelprV1hKSVUyRnpLMXBIVFZFOVBTSXNJblpoYkhWbElqb2lhVU5uUWtZd1ZVSmhhV2xqV0VzM2FtcDVVa2hrUVQwOUlpd2liV0ZqSWpvaVlXTTFZakF6TnpVeU5ETXpZalpqWWpBeE16WmhZMkk0TVdNd1pqZG1aR0ZtTTJNd1pUSmxNRFppWlRaaVpHWXhabUUzWW1NeE5XVmhObVkwTmprNE1DSjkvZWRpdCI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl81OWJhMzZhZGRjMmIyZjk0MDE1ODBmMDE0YzdmNThlYTRlMzA5ODlkIjtpOjE7czoxNzoicGFzc3dvcmRfaGFzaF93ZWIiO3M6NjA6IiQyeSQxMCQxNWJqSC4uN2tBQlh0bUxPRm9iTGd1ak9weXVlSFp6dU1KaW9NWUh6QWVTeGoyeVloaW5OLiI7czoyMToicGFzc3dvcmRfaGFzaF9zYW5jdHVtIjtzOjYwOiIkMnkkMTAkMTViakguLjdrQUJYdG1MT0ZvYkxndWpPcHl1ZUhaenVNSmlvTVlIekFlU3hqMnlZaGluTi4iO30=', 1633407529);
 
 -- ----------------------------
 -- Table structure for unit
@@ -333,22 +332,27 @@ DROP TABLE IF EXISTS `visitor`;
 CREATE TABLE `visitor`  (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NULL DEFAULT NULL,
+  `unit_user` int(11) NULL DEFAULT NULL,
   `keterangan` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `last_activity` timestamp(0) NULL DEFAULT NULL,
   `key` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci NULL DEFAULT NULL,
   `created_at` timestamp(0) NULL DEFAULT NULL,
   `updated_at` timestamp(0) NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 7 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 11 CHARACTER SET = utf8mb4 COLLATE = utf8mb4_general_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of visitor
 -- ----------------------------
-INSERT INTO `visitor` VALUES (1, 1, NULL, '2021-10-04 13:53:13', NULL, '2021-10-04 13:53:13', '2021-10-04 13:53:13');
-INSERT INTO `visitor` VALUES (2, 1, NULL, '2021-10-04 13:53:29', NULL, '2021-10-04 13:53:29', '2021-10-04 13:53:29');
-INSERT INTO `visitor` VALUES (3, 1, NULL, '2021-10-04 14:51:39', NULL, '2021-10-04 14:51:39', '2021-10-04 14:51:39');
-INSERT INTO `visitor` VALUES (4, 1, NULL, '2021-10-04 15:00:01', NULL, '2021-10-04 15:00:01', '2021-10-04 15:00:01');
-INSERT INTO `visitor` VALUES (5, 17, NULL, '2021-10-04 16:53:35', NULL, '2021-10-04 16:53:35', '2021-10-04 16:53:35');
-INSERT INTO `visitor` VALUES (6, 1, NULL, '2021-10-05 05:28:31', NULL, '2021-10-05 05:28:31', '2021-10-05 05:28:31');
+INSERT INTO `visitor` VALUES (1, 1, 1, NULL, '2021-10-04 13:53:13', NULL, '2021-10-04 13:53:13', '2021-10-04 13:53:13');
+INSERT INTO `visitor` VALUES (2, 1, 1, NULL, '2021-10-04 13:53:29', NULL, '2021-10-04 13:53:29', '2021-10-04 13:53:29');
+INSERT INTO `visitor` VALUES (3, 1, 1, NULL, '2021-10-04 14:51:39', NULL, '2021-10-04 14:51:39', '2021-10-04 14:51:39');
+INSERT INTO `visitor` VALUES (4, 1, 1, NULL, '2021-10-04 15:00:01', NULL, '2021-10-04 15:00:01', '2021-10-04 15:00:01');
+INSERT INTO `visitor` VALUES (5, 17, 4, NULL, '2021-10-04 16:53:35', NULL, '2021-10-04 16:53:35', '2021-10-04 16:53:35');
+INSERT INTO `visitor` VALUES (6, 1, 1, NULL, '2021-10-05 05:28:31', NULL, '2021-10-05 05:28:31', '2021-10-05 05:28:31');
+INSERT INTO `visitor` VALUES (7, 1, 1, NULL, '2021-10-05 10:15:05', NULL, '2021-10-05 10:15:05', '2021-10-05 10:15:05');
+INSERT INTO `visitor` VALUES (8, 1, 1, NULL, '2021-10-05 13:19:54', NULL, '2021-10-05 13:19:54', '2021-10-05 13:19:54');
+INSERT INTO `visitor` VALUES (9, 7, 4, NULL, '2021-10-05 15:50:19', NULL, '2021-10-05 15:50:19', '2021-10-05 15:50:19');
+INSERT INTO `visitor` VALUES (10, 9, 3, NULL, '2021-10-05 15:57:38', NULL, '2021-10-05 15:57:38', '2021-10-05 15:57:38');
 
 SET FOREIGN_KEY_CHECKS = 1;

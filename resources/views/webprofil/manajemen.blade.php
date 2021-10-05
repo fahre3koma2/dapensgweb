@@ -34,7 +34,7 @@
                             {{ \Illuminate\Support\Str::limit(strip_tags($baru->keterangan),260,'...')}}
                         </p>
 
-                        <a href="{{ url('/berita/'.Crypt::encrypt($baru->id)) }}" class="btn-startgames macosx lf"><span class="ic-dw"></span> Buka</a>
+                        <a href="{{ url('/beritadetail/'.Crypt::encrypt($baru->id)) }}" class="btn-startgames macosx lf"><span class="ic-dw"></span> Buka</a>
                      </div>
                   </div>
                   <span class="name-rog">

@@ -108,19 +108,7 @@ class BeritaController extends Controller
     public function show($id)
     {
         //
-        $menu = 'manajemen';
-        $reqId = Crypt::decrypt($id);
-        $berita = Berkas::query()->where('id', $reqId)->get()->first();
 
-        $list = Berkas::where('kategori', 'berita')->inRandomOrder()->limit(3)->get();
-
-        $data = [
-            'menu' => $menu,
-            'berita' => $berita,
-            'list' => $list,
-        ];
-
-        return view('webprofil.beritadetail', $data);
     }
 
     /**

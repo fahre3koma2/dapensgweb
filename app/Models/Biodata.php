@@ -17,4 +17,9 @@ class Biodata extends Model
     {
         return $this->hasOne(User::class, 'id', 'user_id');
     }
+
+    public function units()
+    {
+        return $this->hasOne(Unit::class, 'id', 'unit');
+    }
 }

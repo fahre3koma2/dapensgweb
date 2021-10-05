@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Auth;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\Berkas;
 use App\Models\Unit;
@@ -59,7 +60,7 @@ class HomeController extends Controller
     {
         //
 
-        //dd(Auth::user()->nickname);
+        //dd(Auth::user());
 
         $viewrs = Berkas::sum('views');
         $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->get();
@@ -67,11 +68,21 @@ class HomeController extends Controller
         $hariini = Visitor::whereDate('created_at', Carbon::today())->count();
         $bulanini = Visitor::whereMonth('created_at', date('m'))->whereYear('created_at', date('Y'))->count();
 
+        $semua = DB::table('unit')
+        ->where('unit.nama', '!=', 'Administrator')
+        ->leftJoin('visitor', 'visitor.unit_user', '=', 'unit.id')
+        ->select('unit.nama', \DB::raw('COUNT(visitor.id) as jum'))
+        ->groupBy('unit.nama')
+        ->get();
+
+        //dd($semua);
+
         $menu = 'home';
         $data = [
             'menu' => $menu,
             'viewrs' => $viewrs,
             'berita' => $berita,
+            'semua' => $semua,
             'hariini' => $hariini,
             'bulanini' => $bulanini,
         ];
@@ -136,5 +147,23 @@ class HomeController extends Controller
             'menu' => $menu,
         ];
         return view('webprofil.kontak', $data);
+    }
+
+    public function beritadetail($id)
+    {
+        //
+        $menu = 'manajemen';
+        $reqId = Crypt::decrypt($id);
+        $berita = Berkas::query()->where('id', $reqId)->get()->first();
+
+        $list = Berkas::where('kategori', 'berita')->inRandomOrder()->limit(3)->get();
+
+        $data = [
+            'menu' => $menu,
+            'berita' => $berita,
+            'list' => $list,
+        ];
+
+        return view('webprofil.beritadetail', $data);
     }
 }

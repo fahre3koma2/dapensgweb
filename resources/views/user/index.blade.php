@@ -38,6 +38,7 @@
                         <th>No</th>
                         <th>No Pegawai</th>
                         <th>Nama</th>
+                        <th>Unit</th>
                         <th>Jabatan</th>
                         <th>Email</th>
                         <th width="20%">Aksi</th>
@@ -51,7 +52,7 @@
                             <td>{{ $no++ }}</td>
                             <td>{{ $value->biodata->no_pegawai}}</td>
                             <td>{{ $value->name}}</td>
-                            {{--  <td>{{ $value->biodata->unit }}</td>  --}}
+                            <td>@if($value->biodata->units) {{ $value->biodata->units->nama }} @else - @endif </td>
                             <td>{{ $value->biodata->jabatan }}</td>
                             <td>{{ $value->email }}</td>
                             <td>

@@ -7,6 +7,7 @@ use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use \Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Models\Visitor;
+use App\Models\Biodata;
 
 class LoginController extends Controller
 {
@@ -26,9 +27,11 @@ class LoginController extends Controller
     protected function authenticated(Request $request, $user)
     {
         if ($user) {
+            $biodata = Biodata::query()->where('user_id', $user->id)->first();
             Visitor::create([
                 'user_id' => $user->id,
                 'last_activity' => Carbon::now(),
+                'unit_user' => $biodata->unit,
             ]);
             return redirect()->route('dashboard');
         }

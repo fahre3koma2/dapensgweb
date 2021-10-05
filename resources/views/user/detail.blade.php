@@ -80,6 +80,17 @@
                     </div>
                 </div>
 
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Unit</label>
+                    <div class="col-sm-4">
+                        <select class="form-control" name="unit" required>
+                        @foreach ($unit as $id => $nama)
+                            <option value="{{$id}}" {{ $id == $user->biodata->unit ? 'selected' : '' }}>{{$nama}}</option>
+                        @endforeach
+                        </select>
+                    </div>
+                </div>
+
                 <div class="form-group mb-0">
                     <div>
                         <a href="{{ route('user.edit', ['user' => encrypt($user->id)]) }}" class="btn btn-warning waves-effect waves-light">Edit</a>

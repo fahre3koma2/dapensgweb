@@ -40,6 +40,8 @@ Route::get('/penghargaan', [ProfilHomeController::class, 'penghargaan'])->name('
 Route::get('/struktur', [ProfilHomeController::class, 'struktur'])->name('struktur');
 Route::get('/kontak', [ProfilHomeController::class, 'kontak'])->name('kontak');
 
+Route::get('/beritadetail/{$id}', [ProfilHomeController::class, 'beritadetail'])->name('beritadetail');
+
     Route::resource('/user', UserController::class);
     Route::resource('/admin', AdminController::class);
     Route::resource('/berita', BeritaController::class);

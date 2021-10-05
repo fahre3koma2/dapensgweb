@@ -47,7 +47,9 @@
                                 <div class="dropdown-content">
                                     <span class="arrow_box"></span>
                                     <ul class="drop-vape">
-                                        <li><a href="{{url('/admin')}}"> Admin </a> </li>
+                                        @if(Auth::user()->id == '1')
+                                            <li><a href="{{url('/admin')}}"> Admin </a> </li>
+                                        @endif
                                         <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
                                          <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                                             @csrf
@@ -153,10 +155,15 @@
                      <div class="server online">
                         <div class="server_name"><a href="#">Bulan ini : {{$bulanini}}</a></div>
                      </div>
+                    @php $sumunit = 0; @endphp
+                     @foreach($semua as $cont)
                      <div class="server online">
-                        <div class="server_name"><a href="#">Unit :</a></div>
+                        <div class="server_name"><a href="#">{{$cont->nama}} : {{$cont->jum}}</a></div>
                      </div>
-                     <p class="tdx-strom"><span class="online-o"></span> Jumlah : 2173</p>
+                     @php $sumunit += $cont->jum; @endphp
+                     @endforeach
+                     @php $jumlah = $hariini + $bulanini + $sumunit @endphp
+                     <p class="tdx-strom"><span class="online-o"></span> Jumlah : {{$jumlah}}</p>
                   </div>
                   <div class="right-block vk">
                      <div class="n-m">Video</div>

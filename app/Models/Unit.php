@@ -13,4 +13,9 @@ class Unit extends Model
         'id', 'nama', 'keterangan', 'created_at', 'updated_at',
 
     ];
+
+    public function visit()
+    {
+        return $this->belongsTo(Visitor::class, 'id', 'unit_user');
+    }
 }
