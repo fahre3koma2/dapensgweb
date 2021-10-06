@@ -34,19 +34,19 @@
                             {{ \Illuminate\Support\Str::limit(strip_tags($baru->keterangan),260,'...')}}
                         </p>
 
-                        <a href="{{ url('/beritadetail/'.Crypt::encrypt($baru->id)) }}" class="btn-startgames macosx lf"><span class="ic-dw"></span> Buka</a>
+                        <a href="{{ ('berita/'.Crypt::encrypt($baru->id)) }}" class="btn-startgames macosx lf"><span class="ic-dw"></span> Buka</a>
                      </div>
                   </div>
                   <span class="name-rog">
                      <div class="hr-line"></div>
-                     List Berita Terkahir
+                     List Berita
                   </span>
                   <div class="cd-faq-items">
                      <ul id="basics" class="cd-faq-group">
                         <br>
                         @foreach($berita as $item)
                         <li>
-                           <a class="cd-faq-trigger" href="#0">{{$item->perihal}}</a>
+                           <a class="cd-faq-trigger" href="{{ url('berita/'.Crypt::encrypt($baru->id)) }}">{{$item->perihal}}</a>
                            <div class="cd-faq-content">
                               <p>{{ \Illuminate\Support\Str::limit(strip_tags($item->keterangan),260,'...')}}</p>
                            </div>
@@ -55,6 +55,13 @@
                         @endforeach
                      </ul>
                      <!-- cd-faq-group -->
+                     	Halaman : {{ $berita->currentPage() }} <br/>
+                        Jumlah Data : {{ $berita->total() }} <br/>
+                        Data Per Halaman : {{ $berita->perPage() }} <br/>
+
+
+                        {{ $berita->links() }}
+
                   </div>
                   <!-- cd-faq-items -->
                </div>

@@ -23,7 +23,6 @@
                     <a href="#"><i class="mdi mdi-account"></i>Master</a>
                     <ul class="submenu">
                         <li><a href="{{ url('user') }}">User</a></li>
-                        <li><a href="{{ url('admin') }}">File</a></li>
                     </ul>
                 </li>
 

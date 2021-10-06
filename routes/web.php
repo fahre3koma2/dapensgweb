@@ -39,8 +39,7 @@ Route::get('/manajemen', [ProfilHomeController::class, 'manajemen'])->name('mana
 Route::get('/penghargaan', [ProfilHomeController::class, 'penghargaan'])->name('penghargaan');
 Route::get('/struktur', [ProfilHomeController::class, 'struktur'])->name('struktur');
 Route::get('/kontak', [ProfilHomeController::class, 'kontak'])->name('kontak');
-
-Route::get('/beritadetail/{$id}', [ProfilHomeController::class, 'beritadetail'])->name('beritadetail');
+Route::get('/newsdetail/{$id}', [ProfilHomeController::class, 'newsdetail'])->name('newsdetail');
 
     Route::resource('/user', UserController::class);
     Route::resource('/admin', AdminController::class);
@@ -52,5 +51,7 @@ Route::get('/beritadetail/{$id}', [ProfilHomeController::class, 'beritadetail'])
     Route::resource('/hukum', HukumController::class);
 
     Route::resource('/berkas', BerkasController::class);
+
+    Route::get('/home', [AdminController::class, 'home'])->name('home');
 
 });

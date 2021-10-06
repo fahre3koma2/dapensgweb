@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
+use Crypt;
 
 use App\Models\Berkas;
 use App\Models\Unit;
@@ -37,6 +38,7 @@ class HomeController extends Controller
     public function show($id)
     {
         //
+
     }
 
     public function edit($id)
@@ -63,7 +65,7 @@ class HomeController extends Controller
         //dd(Auth::user());
 
         $viewrs = Berkas::sum('views');
-        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->get();
+        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->limit(5)->get();
 
         $hariini = Visitor::whereDate('created_at', Carbon::today())->count();
         $bulanini = Visitor::whereMonth('created_at', date('m'))->whereYear('created_at', date('Y'))->count();
@@ -105,7 +107,7 @@ class HomeController extends Controller
     {
         //
         $menu = 'manajemen';
-        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->get();
+        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->paginate(10);
         $baru = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'desc')->first();
 
         $data = [
@@ -149,7 +151,7 @@ class HomeController extends Controller
         return view('webprofil.kontak', $data);
     }
 
-    public function beritadetail($id)
+    public function newsdetail($id)
     {
         //
         $menu = 'manajemen';

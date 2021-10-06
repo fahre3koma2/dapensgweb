@@ -10,7 +10,7 @@
             <div class="dropdown-content">
                 <span class="arrow_box"></span>
                 <ul class="drop-vape">
-                    <li><a href="{{url('/admin')}}"> Admin </a> </li>
+                    <li><a href="{{url('/home')}}"> Admin </a> </li>
                     <li><a href="{{ route('logout') }}" onclick="event.preventDefault();document.getElementById('logout-form').submit();">Logout</a></li>
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf
