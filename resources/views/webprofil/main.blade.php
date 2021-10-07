@@ -13,7 +13,7 @@
 
       <!-- Place favicon.ico in the root directory -->
       <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,500,600" rel="stylesheet">
-      <link rel="stylesheet" href="{{ url('webprof/css/bootstrap3.min.css')}}">
+      <link rel="stylesheet" href="{{ url('webprof/css/bootstrap.min.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/icons/icomoon.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/icons/fontawesome-all.min.css')}}">
       <link rel="stylesheet" href="{{ url('webprof/css/plugins.css')}}">
