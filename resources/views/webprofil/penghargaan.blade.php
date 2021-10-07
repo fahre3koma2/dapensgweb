@@ -21,13 +21,13 @@
         <div class="row">
 
                 <div class="col-lg-4 col-md-4">
-                 <center> <a href="#" class="btn-startgames lf"><span class="ic-dw"></span>SK Pengurus </a> </center>
+                 <center> <a href="{{ url('hukumkategori/'.Crypt::encrypt("SK Pengurus")) }}" class="btn-startgames lf"><span class="ic-dw"></span>SK Pengurus </a> </center>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                 <center> <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Instruksi Pengurus DPSG </a> </center>
+                 <center> <a href="{{ url('hukumkategori/'.Crypt::encrypt("Instruksi Pengurus DPSG")) }}" class="btn-startgames lf"><span class="ic-dw"></span> Instruksi Pengurus DPSG </a> </center>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                  <center> <a href="#" class="btn-startgames lf"><span class="ic-dw"></span> Perundang - undangan </a> </center>
+                  <center> <a href="{{ url('hukumkategori/'.Crypt::encrypt("Perundang - undangan")) }}" class="btn-startgames lf"><span class="ic-dw"></span> Perundang - undangan </a> </center>
                 </div>
                 <div class="col-lg-12 col-md-12">
                     <br>

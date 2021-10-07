@@ -4,6 +4,17 @@
     Dapen SG - Manajemen
 @endsection
 
+@section('style')
+        <style type="text/css">
+            .my-active span{
+                background-color: #5cb85c !important;
+                color: white !important;
+                border-color: #5cb85c !important;
+            }
+	    </style>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+@endsection
+
 @section('header')
     <section class="page-title" style="background-image:url({{ url('webprofil/images/background/1.jpg')}})">
         <div class="auto-container">
@@ -34,7 +45,7 @@
                             {{ \Illuminate\Support\Str::limit(strip_tags($baru->keterangan),260,'...')}}
                         </p>
 
-                        <a href="{{ ('berita/'.Crypt::encrypt($baru->id)) }}" class="btn-startgames macosx lf"><span class="ic-dw"></span> Buka</a>
+                        <a href="{{ url('newsdetail/'.Crypt::encrypt($baru->id)) }}" class="btn-startgames macosx lf"><span class="ic-dw"></span> Buka</a>
                      </div>
                   </div>
                   <span class="name-rog">
@@ -55,14 +66,8 @@
                         @endforeach
                      </ul>
                      <!-- cd-faq-group -->
-                     	Halaman : {{ $berita->currentPage() }} <br/>
-                        Jumlah Data : {{ $berita->total() }} <br/>
-                        Data Per Halaman : {{ $berita->perPage() }} <br/>
-
-
-                        {{ $berita->links() }}
-
                   </div>
+                  {!! $berita->links('vendor.costum') !!}
                   <!-- cd-faq-items -->
                </div>
 

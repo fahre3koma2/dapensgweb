@@ -107,7 +107,7 @@ class HomeController extends Controller
     {
         //
         $menu = 'manajemen';
-        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->paginate(10);
+        $berita = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'ASC')->paginate(2);
         $baru = Berkas::query()->where('kategori', 'berita')->orderBy('created_at', 'desc')->first();
 
         $data = [
@@ -168,4 +168,20 @@ class HomeController extends Controller
 
         return view('webprofil.beritadetail', $data);
     }
+
+    public function hukumkategori($kategori)
+    {
+        //
+        $kat = Crypt::decrypt($kategori);
+        $menu = 'manajemen';
+        $berkas = Berkas::query()->where('kategori', 'hukumonline')->where('jenis', $kat)->orderBy('created_at', 'ASC')->get();
+
+        $data = [
+            'menu' => $menu,
+            'berkas' => $berkas,
+        ];
+
+        return view('webprofil.penghargaan', $data);
+    }
+
 }

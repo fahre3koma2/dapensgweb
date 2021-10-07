@@ -26,6 +26,7 @@
         <link href="{{ url('assets/plugins/summernote/summernote-bs4.css') }}" rel="stylesheet" />
 
         <link href="{{ url('assets/plugins/sweetalert2/dist/sweetalert2.min.css') }}" rel="stylesheet">
+
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
 

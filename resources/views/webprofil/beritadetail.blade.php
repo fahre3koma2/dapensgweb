@@ -45,7 +45,7 @@
                                 <p class="desctop">
                                     @foreach($list as $item)
                                     <li>
-                                    <a class="cd-faq-trigger" href="#0">{{$item->perihal}}</a>
+                                    <a class="cd-faq-trigger" href="{{ url('newsdetail/'.Crypt::encrypt($item->id)) }}">{{$item->perihal}}</a>
                                     <!-- cd-faq-content -->
                                     </li>
                                     @endforeach
