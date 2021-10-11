@@ -42,6 +42,8 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         Route::get('/kontak', [ProfilHomeController::class, 'kontak'])->name('kontak');
         Route::get('/newsdetail/{id}', [ProfilHomeController::class, 'newsdetail'])->name('newsdetail');
         Route::get('/hukumkategori/{kategori}', [ProfilHomeController::class, 'hukumkategori'])->name('hukumkategori');
+        Route::get('/ubahpass/{id}', [ProfilHomeController::class, 'ubahpass'])->name('ubahpass');
+        Route::post('/passstore', [ProfilHomeController::class, 'passstore'])->name('passstore');
     });
 
     Route::group(['middleware' => ['role:admin']], function () {
@@ -57,6 +59,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         Route::resource('/berkas', BerkasController::class);
 
         Route::get('/home', [AdminController::class, 'home'])->name('home');
+        Route::post('/resetpass/{id}', [UserController::class, 'resetpass'])->name('resetpass');
     });
 
 });

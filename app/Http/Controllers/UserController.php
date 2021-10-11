@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\Biodata;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
+use Illuminate\Support\Facades\Hash;
 
 use Alert;
 use Exception;
@@ -109,11 +110,13 @@ class UserController extends Controller
         try {
             $menu = 'User';
             $user = User::query()->with(['biodata'])->find(decrypt($id));
+            $unit = Unit::where('nama', '!=', 'Administrator')->pluck('nama', 'id');
 
             $data = [
                     'menu' => $menu,
                     'edit' => $edit,
                     'user' => $user,
+                    'unit' => $unit,
                 ];
 
             return view('user.detail', $data);
@@ -207,6 +210,18 @@ class UserController extends Controller
 
         alert()->success('Berhasil', 'User Berhasil di Update')->persistent('Ok');
         Alert::success('Data berhasil dihapus')->persistent('Ok');
+
+        return redirect()->route('user.index');
+    }
+
+    public function resetpass($id)
+    {
+        //
+        $pass = 'dapensg12345';
+        User::find(decrypt($id))->update(['password' => Hash::make($pass)]);
+
+        alert()->success('Berhasil', 'User Berhasil di Reset')->persistent('Ok');
+        Alert::success('Data berhasil direset')->persistent('Ok');
 
         return redirect()->route('user.index');
     }

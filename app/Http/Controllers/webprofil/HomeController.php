@@ -4,14 +4,18 @@ namespace App\Http\Controllers\webprofil;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\DB;
 use Crypt;
+use Alert;
 
+use App\Rules\MatchOldPassword;
 use App\Models\Berkas;
 use App\Models\Unit;
 use App\Models\Visitor;
+use App\Models\User;
 
 class HomeController extends Controller
 {
@@ -182,6 +186,51 @@ class HomeController extends Controller
         ];
 
         return view('webprofil.penghargaan', $data);
+    }
+
+    public function ubahpass($id)
+    {
+        //
+        $userid = Crypt::decrypt($id);
+        $menu = 'manajemen';
+        $user = User::query()->where('id', $userid)->first();
+
+        $data = [
+            'menu' => $menu,
+            'user' => $user,
+        ];
+
+        return view('webprofil.ubahpass', $data);
+    }
+
+    public function passstore(Request $request)
+    {
+        //
+        // $request->validate([
+        //     'lama' => ['required', new MatchOldPassword],
+        //     'baru' => ['required'],
+        //     'konfirmasi' => ['same:baru'],]
+
+        // );
+
+        $this->validate(
+            $request,
+            [
+                'lama' => ['required', new MatchOldPassword],
+                'baru' => ['required'],
+                'konfirmasi' => ['same:baru'],
+            ],
+            [
+                'konfirmasi.same' => 'Konfirmasi Password Tidak Sama',
+            ]
+        );
+
+        User::find(auth()->user()->id)->update(['password' => Hash::make($request->baru)]);
+
+        Alert::success('Password Berhasil dirubah');
+        return redirect()->back();
+
+        //dd('Password change successfully.');
     }
 
 }

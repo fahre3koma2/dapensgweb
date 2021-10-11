@@ -37,11 +37,7 @@
                     <h4 class="mt-0 header-title">Form Add User</h4>
                 @endif
 
-                <form action="{{ $edit ? route('user.update', ['user' => encrypt($user->id)]) : route('user.store') }}" method="POST">
-                @if ($edit)
-                    {{ method_field('PUT') }}
-                @endif
-                @csrf
+
                 <div class="form-group row">
                     <label for="example-text-input" class="col-sm-2 col-form-label">No Pegawai</label>
                     <div class="col-sm-6">
@@ -76,14 +72,14 @@
                 <div class="form-group row">
                     <label for="example-text-input" class="col-sm-2 col-form-label">Jabatan</label>
                     <div class="col-sm-6">
-                        <input type="text" class="form-control" id="jabatan" name="jabatan" value="{{ $edit ? $user->biodata->jabatan : old('jabatan') }}">
+                        <input type="text" class="form-control" id="jabatan" name="jabatan" value="{{ $edit ? $user->biodata->jabatan : old('jabatan') }}" disabled>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label class="col-sm-2 col-form-label">Unit</label>
                     <div class="col-sm-4">
-                        <select class="form-control" name="unit" required>
+                        <select class="form-control" name="unit" required disabled>
                         @foreach ($unit as $id => $nama)
                             <option value="{{$id}}" {{ $id == $user->biodata->unit ? 'selected' : '' }}>{{$nama}}</option>
                         @endforeach
@@ -95,6 +91,10 @@
                     <div>
                         <a href="{{ route('user.edit', ['user' => encrypt($user->id)]) }}" class="btn btn-warning waves-effect waves-light">Edit</a>
                         <a href="{{ url('/user') }}" class="btn btn-secondary waves-effect m-l-5">Kembali</a>
+                        <button class="btn btn-sm btn-info float-right direset" data-id="{{ $user->id }}" data-file="direset_{{$user->id}}"><i class="fa fa-lock"></i> Reset Password</button>
+                            {{ Form::open(['url'=>route('resetpass', [Crypt::encrypt($user->id)]), 'method'=> 'post', 'id' => 'direset_'.$user->id]) }}
+                            {{ csrf_field() }}
+                            {{ Form::close() }}
                     </div>
                 </div>
             </div>
@@ -103,5 +103,29 @@
 </div> <!-- end row -->
 @endsection
 
-@section('js')''
+@section('js')
+    <script src="{{ url('assets/plugins/sweetalert2/sweetalert2.min.js') }}"></script>
+    <script>
+        $("body").on("click", ".direset", function (e) {
+            e.preventDefault();
+            var id = $(this).data('id');
+
+            Swal.fire({
+                title: "Apakah Anda Yakin?",
+                text: "Reset User Ini ?!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#DD6B55",
+                confirmButtonText: "Yes",
+                cancelButtonText: "No"
+            }).then((result) => {
+                if (result.value) {
+                    Swal.close();
+                    $("#direset_"+id).submit();
+                } else if (result.dismiss === Swal.DismissReason.cancel) {
+                    Swal.fire('Direset', 'User Berhasil Di Reset', 'error');
+                }
+            });
+        });
+    </script>
 @endsection
