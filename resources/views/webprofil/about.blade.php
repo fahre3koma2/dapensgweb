@@ -41,7 +41,11 @@
                     <div class="col-md-10 lv">
                         <h3 class="th-name"></h3>
                         <p class="desctop">
+                            Untuk menjalankan fungsi di Dana Pensiun Semen Gresik, ada struktur organisasi.
+                            Di pimpin oleh 2 (dua) pengurus yaitu Direktur Utama dan Direktur. Direktur Utama Dana Pensiun Semen Gresik saat ini di pimpin oleh Ibu Nur Widjajanti, SE. dan Direktur Dana Pensiun Semen Gresik adalah Ibu Sudartini, SE.
+                            Dana Pensiun Semen Gresik juga memiliki Dewan Pengawas yang terdiri dari Bapak Tigor Pangaribuan sebagai Ketua Dewan Pengawas, Bapak Budi Wahyudarsono, Bapak M. Soffan Heri sebagai Anggota Dewan Pengawas saat ini.
 
+                            Untuk mencapai Visi dan Misi Dana Pensiun Semen Gresik maka di kelola oleh beberapa bagian atau unit. Beberapa unit yang ada di Dana Pensiun Semen Gresik adalah Unit Kepesertaan, Unit Investasi, Unit Akuntansi & Keuangan, Unit Legal, Unit Internal Audit, dan Unit Manajemen Risiko.
                         <br><br>
                     </div>
                 </div>

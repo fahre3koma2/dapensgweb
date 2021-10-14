@@ -54,6 +54,7 @@
                         <td>{{$value->keterangan}}</td>
                         <td><a href="{{ url('berkasnya/hukumonline/'.$value->file) }}" title="{{$value->file}}" target="_blank">{{$value->perihal}}</a></td>
                         <td>
+                            <a href="{{ url('/hukum/'.Crypt::encrypt($value->id).'/edit') }}" class="btn btn-sm btn-primary"><i class="fa fa-pen"></i> Edit</a>
                             <button type="button" class="btn btn-sm btn-danger delete" data-id="{{ $value->id }}" data-file="{{$value->id}}"><i class="fa fa-trash"></i> Hapus</button>
                                 {{ Form::open(['url'=>route('berkas.destroy', [Crypt::encrypt($value->id)]), 'method'=>'delete', 'id' => $value->id, 'style' => 'display: none;']) }}
                                 {{ csrf_field() }}

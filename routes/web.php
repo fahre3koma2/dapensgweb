@@ -12,6 +12,7 @@ use App\Http\Controllers\HukumController;
 use App\Http\Controllers\InventasiController;
 use App\Http\Controllers\BerkasController;
 use App\Http\Controllers\BeritaController;
+use App\Http\Controllers\GambarController;
 use App\Http\Controllers\Auth\LoginController;
 
 /*
@@ -55,6 +56,7 @@ Route::group(['middleware' => ['auth:sanctum', 'verified']], function () {
         Route::resource('/kearsipan', KearsipanController::class);
         Route::resource('/tatakelola', TataKelolaController::class);
         Route::resource('/hukum', HukumController::class);
+        Route::resource('/gambar', GambarController::class);
 
         Route::resource('/berkas', BerkasController::class);
 

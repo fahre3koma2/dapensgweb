@@ -9,13 +9,17 @@
                 </li>
 
                 <li class="has-submenu">
+                    <a href="{{url('/gambar')}}"><i class="mdi mdi-google-pages"></i>Gambar</a>
+                </li>
+
+                <li class="has-submenu">
                     <a href="{{url('/berita')}}"><i class="mdi mdi-poll-box"></i>Berita</a>
                     {{--  <ul class="submenu">
                         <li><a href="#">Menu 1</a></li>
                     </ul>  --}}
                 </li>
 
-                 <li class="has-submenu">
+                <li class="has-submenu">
                     <a href="{{url('/hukum')}}"><i class="mdi mdi-bank"></i>Hukum Online</a>
                 </li>
 

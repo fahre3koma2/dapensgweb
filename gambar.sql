@@ -1,0 +1,3 @@
+INSERT INTO `gambar` VALUES (2, '1634205889_slide1_tXDKpqjxVwYq.jpg', 'slide1', NULL, '2021-10-14 17:04:49', '2021-10-14 17:04:49');
+INSERT INTO `gambar` VALUES (3, '1634206376_slide2_JqHdrHVcTeeB.jpg', 'slide2', NULL, '2021-10-14 17:12:56', '2021-10-14 17:12:56');
+INSERT INTO `gambar` VALUES (5, '1634208149_slide3_VSiAVgvXRUHu.png', 'slide3', NULL, '2021-10-14 17:42:29', '2021-10-14 17:42:29');

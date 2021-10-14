@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Akutansi - DAPEN SG
+    Hukum Online - DAPEN SG
 @endsection
 
 @section('header')

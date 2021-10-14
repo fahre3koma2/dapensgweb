@@ -77,30 +77,28 @@
                      <!-- Swiper -->
                      <div class="swiper-container">
                         <div class="swiper-wrapper">
-                           <div class="swiper-slide" data-hash="slide1">
+
+                           {{--  <div class="swiper-slide" data-hash="slide1">
                                 <div class="col-md-10">
                                     <img class="img-ste1" width="100%" src="{{ url('webprof/img/post3.jpg')}}">
                                 </div>
 
-                              {{--  <div class="col-md-6">
+                              <div class="col-md-6">
                                  <h4 class="name-intro">DANA PENSIUN<br>SEMEN GRESIK</h4>
                                  <span class="hr-intro"></span>
                                  <p class="docopation-intro">
                                     Jl. R.A. Kartini No.23, Injen Timur, Gapurosukolilo,<br> Kec. Gresik, Kabupaten Gresik, Jawa Timur 61122
                                  </p>
                                    <a href="#" class="btn-drop"><span class="ic-sx22"></span> Подробнее</a>
-                              </div>  --}}
-                           </div>
-                           <div class="swiper-slide" data-hash="slide2">
+                              </div>
+                           </div>  --}}
+                           @foreach($gambar as $img)
+                           <div class="swiper-slide" data-hash="{{$img->slide}}">
                               <div class="col-md-10">
-                                    <img class="img-ste1" width="100%" src="{{ url('webprof/img/post2.jpg')}}">
+                                    <img class="img-ste1" width="100%" src="{{ url('berkasnya/gambar/'. $img->file)}}">
                               </div>
                            </div>
-                           <div class="swiper-slide" data-hash="slide3">
-                              <div class="col-md-10">
-                                    <img class="img-ste1" width="100%" src="{{ url('webprof/img/post1.jpg')}}">
-                              </div>
-                           </div>
+                           @endforeach
                         </div>
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
@@ -129,7 +127,7 @@
                         @php  $berita = htmlspecialchars_decode(nl2br($item->keterangan)); $text = substr($berita,26); @endphp
                         {{ \Illuminate\Support\Str::limit(strip_tags($item->keterangan),260,'...')}}
                      </p>
-                     <a href="{{ url('/berita/'.Crypt::encrypt($item->id)) }}" class="btn-view"><span class="ic-sx24"></span> Buka</a>
+                     <a href="{{ url('newsdetail/'.Crypt::encrypt($item->id)) }}" class="btn-view"><span class="ic-sx24"></span> Buka</a>
                      <span class="time-data">{{date('d-m-Y H:i', strtotime($item->created_at));}}</span>
                   </div>
                 @endforeach
@@ -174,8 +172,9 @@
                   </div>
 
                   <div class="right-block">
+                    <a href="{{ url('webprof/img/visi.png')}}" target="_blank">
                        <img class="img-ste1" width="100%" src="{{ url('webprof/img/visi.png')}}">
-
+                    </a>
                   </div>
                </div>
             </div>

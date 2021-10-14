@@ -16,6 +16,7 @@ use App\Models\Berkas;
 use App\Models\Unit;
 use App\Models\Visitor;
 use App\Models\User;
+use App\Models\Gambar;
 
 class HomeController extends Controller
 {
@@ -74,6 +75,8 @@ class HomeController extends Controller
         $hariini = Visitor::whereDate('created_at', Carbon::today())->count();
         $bulanini = Visitor::whereMonth('created_at', date('m'))->whereYear('created_at', date('Y'))->count();
 
+        $gambar = Gambar::query()->orderBy('created_at', 'ASC')->limit(5)->get();
+
         $semua = DB::table('unit')
         ->where('unit.nama', '!=', 'Administrator')
         ->leftJoin('visitor', 'visitor.unit_user', '=', 'unit.id')
@@ -91,6 +94,7 @@ class HomeController extends Controller
             'semua' => $semua,
             'hariini' => $hariini,
             'bulanini' => $bulanini,
+            'gambar' => $gambar,
         ];
 
         return view('webprofil.index', $data);
